@@ -2,8 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'normalize.css/normalize.css';
 import App from "./App";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Shell from "./components/Shell";
+import ErrorPage from "./components/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Shell/>,
+        children: [
+            {
+                path: '/',
+                element: <App/>,
+            },
+            {
+                path: '/*',
+                element: <ErrorPage/>,
+            }
+        ]
+    }
+])
+
 root.render(
-    <App/>
+    <RouterProvider router={router}/>
 );

@@ -1,8 +1,11 @@
 import React from 'react';
-import headerBackground from '../images/png/header/HeaderBackground.png'
-import '../sass/header.sass';
+import '../../sass/header.sass';
+import headerBackground from '../../images/png/header/HeaderBackground.png';
+import {useNavigate} from "react-router-dom";
 
 const Header = () => {
+    const navigation = useNavigate()
+
     return (
         <header style={{backgroundImage: `url(${headerBackground})`}}>
             <h1 className='header__title'>
@@ -16,7 +19,7 @@ const Header = () => {
                 обучения кадров
             </p>
 
-            <button className='header__find-tour'>
+            <button className='header__find-tour' onClick={() => navigation('/tour')}>
                 Найти тур
             </button>
         </header>

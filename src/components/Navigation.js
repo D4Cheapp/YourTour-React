@@ -1,12 +1,18 @@
 import React, {useRef} from 'react'
 import logo from '../images/png/header/HeaderLogo.png'
 import '../sass/navigation.sass'
+import {NavLink, useNavigate} from "react-router-dom";
 
 const Navigation = () => {
     let scrollPosition = 0
+
     window.addEventListener('scroll', scrollCheck)
 
     const navBar = useRef(null)
+
+    const navigate = useNavigate()
+
+    const isBasePage = !!window.location.href.split('/').at(-1)
 
     function scrollCheck() {
         scrollPosition = window.scrollY
@@ -20,22 +26,22 @@ const Navigation = () => {
     }
 
     return (
-        <nav ref={navBar}>
-            <img className="navigation__logo" src={logo} alt=""/>
+        <nav ref={navBar} className={ isBasePage ? 'scroll-navigation__error scroll-navigation' : ''}>
+            <img className="navigation__logo" src={logo} alt="" onClick={() => navigate('/')}/>
 
             <div className="navigation-links">
-                <a href="/tour" className="navigation-links__link">
+                <NavLink to="/tour" className="navigation-links__link">
                     Туры
-                </a>
-                <a href="/build-tour" className="navigation-links__link">
+                </NavLink>
+                <NavLink to="/build-tour" className="navigation-links__link">
                     Создать тур
-                </a>
-                <a href="/feedback" className="navigation-links__link">
+                </NavLink>
+                <NavLink to="/feedback" className="navigation-links__link">
                     Отзывы
-                </a>
-                <a href="/history" className="navigation-links__link">
+                </NavLink>
+                <NavLink to="/history" className="navigation-links__link">
                     Истории
-                </a>
+                </NavLink>
             </div>
 
             <a className="navigation__telephone" href="tel:+79999999999">
