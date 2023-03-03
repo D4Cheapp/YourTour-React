@@ -25,3 +25,10 @@ body
   max-width: 100%
   overflow-x: hidden
   background: $mercury
+
+=underline ($color, $height)
+  border-bottom: $height transparent solid
+  transition: .2s
+
+  &:hover
+    border-bottom: $height $color solid
