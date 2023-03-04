@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import cardArrow from '../../images/svg/CardsArrow.svg';
 import PopularExcursions from "../../data/PopularExcursions";
 import '../../sass/home/chooseYourTour.sass';
+import {useNavigate} from "react-router-dom";
 
 function ChooseYourTour() {
     const [activeCategory, setActiveCategory] = useState('popular')
@@ -46,6 +47,8 @@ function ChooseYourTour() {
 }
 
 function CardCreating({info}) {
+    const navigator = useNavigate()
+
     return(
         <div className="tour-card">
             <div className="tour-card-info">
@@ -60,7 +63,7 @@ function CardCreating({info}) {
             <img className="tour-card__background-image" src={info.image} loading='lazy' alt=""/>
             <div className="tour-card__blackout"/>
 
-            <button className="tour-card__more-button">
+            <button className="tour-card__more-button" onClick={() => navigator(`/tours`)}>
                 Подробнее <img src={cardArrow} alt='' loading='lazy'/>
             </button>
         </div>

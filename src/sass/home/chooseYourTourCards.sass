@@ -7,13 +7,8 @@ div.card-choosing-section
   justify-content: center
   gap: 30px
 
-
 div.tour-card
   position: relative
-
-  display: inline-flex
-  flex-direction: column
-  justify-content: space-between
 
   width: 370px
   height: 531px
@@ -24,6 +19,13 @@ div.tour-card
   border-radius: 50px
   overflow: hidden
 
+  &:hover
+    img.tour-card__background-image
+      scale: 1.2
+
+    button.tour-card__more-button
+      background: $green400
+
   img.tour-card__background-image
     position: absolute
     z-index: -2
@@ -33,6 +35,8 @@ div.tour-card
     object-fit: cover
     width: 100%
     height: 100%
+
+    transition: .3s
 
   div.tour-card__blackout
     position: absolute
@@ -45,11 +49,20 @@ div.tour-card
     height: 100%
 
   button.tour-card__more-button
+    position: absolute
+    bottom: 43px
+    left: 30px
+
     outline: none
     border: none
+    cursor: pointer
+
+    border-radius: 50px
     background: none
-    padding: 0
-    width: 60%
+
+    padding-block: 7px
+    padding-inline: 20px
+    width: fit-content
 
     color: $white
     font-size: 23px
@@ -59,6 +72,11 @@ div.tour-card
     align-items: center
     justify-content: left
     gap: 16px
+
+    transition: .2s
+
+    &:active
+      background: $orange200
 
 
 div.tour-card-info
@@ -113,6 +131,13 @@ div.tour-card-info
     height: 318px
 
     button.tour-card__more-button
+      bottom: 23px
+      left: 15px
+
+      padding-block: 3px
+      padding-inline: 10px
+      border-radius: 20px
+
       font-size: 16px
       line-height: 22.72px
 
