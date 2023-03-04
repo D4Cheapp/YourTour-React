@@ -1,0 +1,66 @@
+@import ./chooseYourTourCards
+
+section.choose-your-tour
+  +sectionInit
+
+div.choose-section
+  display: inline-flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  h1.choose-section__title
+    margin-top: 0
+    margin-bottom: 35px
+
+    font-weight: 700
+    font-size: 59px
+    line-height: 73.16px
+
+
+div.tour-select
+  display: inline-flex
+  gap: 30px
+
+  button.tour-select__button
+    outline: none
+    border: none
+    padding: 0 0 3px
+
+    cursor: pointer
+    background: none
+
+    color: $black
+    font-weight: 700
+    font-size: 23px
+
+    +underline($black, 2px)
+
+  button.active-category
+    color: $orange200
+    border-bottom: 2px $orange200 solid
+
+    &:hover
+      border-bottom: 2px $orange200 solid
+
+
+@media screen and (max-width: 700px)
+  div.choose-section > h1.choose-section__title
+    font-size: 34px
+    line-height: 38.08px
+    letter-spacing: 0.02em
+    margin-bottom: 30px
+
+
+  div.tour-select
+    @media screen and (max-width: 360px)
+      width: 90%
+    justify-content: center
+    flex-wrap: wrap
+    gap: 10px
+    row-gap: 8px
+
+    button.tour-select__button
+      padding-bottom: 0
+      font-size: 16px
+      line-height: 23px

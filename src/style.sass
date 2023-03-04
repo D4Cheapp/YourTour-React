@@ -22,6 +22,7 @@ $mercury: #e5e5e5
 
 body
   font-family: "Roboto", serif
+  font-weight: 400
   max-width: 100%
   overflow-x: hidden
   background: $mercury
@@ -32,3 +33,14 @@ body
 
   &:hover
     border-bottom: $height $color solid
+
+=sectionInit ()
+  display: inline-flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  width: 100%
+  margin-top: 135px
+  @media screen and (max-width: 700px)
+    margin-top: 75px
