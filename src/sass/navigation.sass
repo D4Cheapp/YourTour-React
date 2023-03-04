@@ -37,7 +37,7 @@ div.navigation-links
 
 
 nav.scroll-navigation
-  position: sticky
+  position: fixed
   top: 0
 
   background: rgba(243, 239, 232, 0.6)
@@ -49,10 +49,6 @@ nav.scroll-navigation
   a.navigation__telephone, & > div.navigation-links > a.navigation-links__link
     color: $black
     +underline($black, 1px)
-
-nav.scroll-navigation__error
-  position: absolute
-  border-bottom: 1px black solid
 
 @media screen and (max-width: 1700px)
   nav
