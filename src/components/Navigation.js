@@ -3,7 +3,7 @@ import logo from '../images/png/header/HeaderLogo.png'
 import '../sass/navigation.sass'
 import {NavLink, useNavigate} from "react-router-dom";
 
-const Navigation = () => {
+function Navigation() {
     let scrollPosition = 0
 
     window.addEventListener('scroll', scrollCheck)
@@ -48,7 +48,7 @@ const Navigation = () => {
                 +7 999 999 99 99
             </a>
         </nav>
-    );
-};
+    )
+}
 
-export default Navigation;
+export default Navigation

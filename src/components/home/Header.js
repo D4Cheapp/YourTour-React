@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../sass/header.sass';
+import '../../sass/home/header.sass';
 import headerBackground from '../../images/png/header/HeaderBackground.png';
 import {useNavigate} from "react-router-dom";
 
-const Header = () => {
+function Header() {
     const navigation = useNavigate()
 
     return (
@@ -23,7 +23,7 @@ const Header = () => {
                 Найти тур
             </button>
         </header>
-    );
-};
+    )
+}
 
 export default Header;

@@ -1,11 +1,13 @@
 import React from "react";
-import './sass/header.sass';
-import Header from "./components/home/Header";
+import './sass/home/header.sass';
+import Navigation from "./components/Navigation";
+import {Outlet} from "react-router-dom";
 
 function App() {
   return (
     <>
-        <Header/>
+        <Navigation/>
+        <Outlet/>
     </>
   );
 }
