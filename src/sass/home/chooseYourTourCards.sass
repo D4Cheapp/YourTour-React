@@ -30,7 +30,7 @@ div.tour-card
     top: 0
     left: 0
 
-    object-fit: contain
+    object-fit: cover
     width: 100%
     height: 100%
 
@@ -60,6 +60,7 @@ div.tour-card
     justify-content: left
     gap: 16px
 
+
 div.tour-card-info
   color: $white
 
@@ -77,3 +78,54 @@ div.tour-card-info
     font-size: 17px
     line-height: 142%
     letter-spacing: -0.01em
+
+
+@media screen and (max-width: 1800px)
+  div.card-choosing-section
+    width: 80%
+
+@media screen and (max-width: 1350px)
+  div.tour-card-info
+    color: $white
+
+    h1.tour-card-info__title
+      width: 100%
+
+  div.card-choosing-section
+    width: 100%
+    gap: 18px
+
+  div.tour-card
+    width: 450px
+    height: 531px
+
+@media screen and (max-width: 950px)
+  div.card-choosing-section
+    flex-direction: column
+    align-items: center
+    margin-top: 48px
+
+@media screen and (max-width: 700px)
+  div.tour-card
+    border-radius: 20px
+    padding: 25px
+    width: 318px
+    height: 318px
+
+    button.tour-card__more-button
+      font-size: 16px
+      line-height: 22.72px
+
+  div.tour-card-info
+    color: $white
+
+    h1.tour-card-info__title
+      font-size: 23px
+      letter-spacing: 0.04em
+      line-height: 120%
+      margin-bottom: 13px
+
+    p.tour-card-info__price
+      font-size: 16px
+
+

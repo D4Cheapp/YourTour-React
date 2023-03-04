@@ -25,8 +25,7 @@ div.tour-select
   button.tour-select__button
     outline: none
     border: none
-    padding-inline: 0
-    padding-bottom: 2px
+    padding: 0 0 3px
 
     cursor: pointer
     background: none
@@ -43,3 +42,25 @@ div.tour-select
 
     &:hover
       border-bottom: 2px $orange200 solid
+
+
+@media screen and (max-width: 700px)
+  div.choose-section > h1.choose-section__title
+    font-size: 34px
+    line-height: 38.08px
+    letter-spacing: 0.02em
+    margin-bottom: 30px
+
+
+  div.tour-select
+    @media screen and (max-width: 360px)
+      width: 90%
+    justify-content: center
+    flex-wrap: wrap
+    gap: 10px
+    row-gap: 8px
+
+    button.tour-select__button
+      padding-bottom: 0
+      font-size: 16px
+      line-height: 23px
