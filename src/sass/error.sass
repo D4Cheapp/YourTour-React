@@ -7,3 +7,17 @@ h1.error
   display: flex
   justify-content: center
   align-items: center
+
+
+nav.scroll-navigation__error
+  position: absolute
+  border-bottom: 1px black solid
+
+  background: rgba(243, 239, 232, 0.6)
+
+  img.navigation__logo
+    filter: invert(1)
+
+  a.navigation__telephone, & > div.navigation-links > a.navigation-links__link
+    color: $black
+    +underline($black, 1px)
