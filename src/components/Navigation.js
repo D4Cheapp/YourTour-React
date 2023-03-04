@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import logo from '../images/png/header/HeaderLogo.png'
 import '../sass/navigation.sass'
 import {NavLink, useNavigate} from "react-router-dom";
@@ -12,7 +12,7 @@ function Navigation() {
 
     const navigate = useNavigate()
 
-    const isBasePage = !!window.location.href.split('/').at(-1)
+    const [isBasePage, setIsBasePage] = useState(!!window.location.href.split('/').at(-1))
 
     function scrollCheck() {
         scrollPosition = window.scrollY
@@ -25,12 +25,16 @@ function Navigation() {
         }
     }
 
+    useEffect(() => {
+        setIsBasePage(!!window.location.href.split('/').at(-1))
+    }, [navigate])
+
     return (
-        <nav ref={navBar} className={ isBasePage ? 'scroll-navigation__error scroll-navigation' : ''}>
+        <nav ref={navBar} className={ isBasePage ? 'scroll-navigation__error' : ''}>
             <img className="navigation__logo" src={logo} alt="" onClick={() => navigate('/')}/>
 
             <div className="navigation-links">
-                <NavLink to="/tour" className="navigation-links__link">
+                <NavLink to="/tours" className="navigation-links__link">
                     Туры
                 </NavLink>
                 <NavLink to="/build-tour" className="navigation-links__link">
