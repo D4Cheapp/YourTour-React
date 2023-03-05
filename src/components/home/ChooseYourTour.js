@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import cardArrow from '../../images/svg/CardsArrow.svg';
 import PopularExcursions from "../../data/PopularExcursions";
-import '../../sass/home/chooseYourTour.sass';
 import {useNavigate} from "react-router-dom";
 
 function ChooseYourTour() {

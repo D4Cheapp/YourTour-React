@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../sass/home/sectionTitle.sass';
 
 function SectionTitle({title}) {
     return (
