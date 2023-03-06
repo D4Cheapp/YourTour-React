@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'normalize.css/normalize.css';
 import App from "./App";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import HomeIndex from "./components/HomeIndex";
+import Home from "./components/home/Home";
 import ErrorPage from "./components/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <HomeIndex/>,
+                element: <Home/>,
             },
             {
                 path: '/*',
