@@ -3,7 +3,7 @@ import React from 'react';
 function FormBuildingButtons() {
     return (
         <div className='form-building-buttons'>
-            <button className="form-building-buttons__button form-building-buttons__button__submit">
+            <button className="form-building-buttons__button form-building-buttons__button__submit" type='submit'>
                 Найти тур
             </button>
 

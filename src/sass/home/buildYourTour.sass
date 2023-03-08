@@ -1,7 +1,17 @@
+@import buildYourTourComponent/ageAndLicenceInput
+@import buildYourTourComponent/formBuildingButtons
+@import buildYourTourComponent/inputBuilding
+
+
 section.build-your-tour
   +sectionInit
 
+
 form.tour-building-form
+  display: inline-flex
+  flex-direction: column
+  row-gap: 33px
+
   border-radius: 50px
   width: 1170px
   height: 986px
@@ -10,14 +20,21 @@ form.tour-building-form
   padding: 70px
   background: $white
 
-div.tour-input
-  display: inline-flex
+
+h3.form-title
+  margin-top: 0
+  margin-bottom: 8px
+  line-height: 28px
+  font-weight: 400
+  font-size: 20px
+
 
 @media screen and (max-width: 1300px)
   form.tour-building-form
     width: 918px
     height: 966px
     padding: 60px
+
 
 @media screen and (max-width: 1000px)
   form.tour-building-form
@@ -30,3 +47,10 @@ div.tour-input
     width: 318px
     height: 1110px
     padding: 20px
+
+  h3.form-title
+    margin-top: 0
+    margin-bottom: 8px
+    font-weight: 400
+    font-size: 20px
+

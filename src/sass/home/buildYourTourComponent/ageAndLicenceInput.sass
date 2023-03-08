@@ -1,0 +1,105 @@
+=customInput()
+  position: relative
+  cursor: pointer
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  width: 24px
+  height: 24px
+
+  border: 2px $black solid
+
+  &::after
+    position: absolute
+    content: ''
+    opacity: 0
+
+    transition: .2s
+
+div.age-radio-buttons-container
+  display: inline-flex
+  gap: 31px
+
+
+label.age-radio-button
+  display: inline-flex
+  gap: 11px
+
+  div.age-radio-button__custom-checkbox
+    +customInput
+    border-radius: 50%
+
+    &::after
+      width: 12px
+      height: 12px
+
+      background: $black
+      border-radius: 50%
+
+  h4.age-radio-button__label
+    margin: 0
+    font-weight: 400
+    font-size: 20px
+
+  input.age-radio-button__input
+    display: none
+
+    &:checked + div.age-radio-button__custom-checkbox::after
+        opacity: 1
+
+
+label.license-agreement
+  display: inline-flex
+  align-items: center
+  gap: 11px
+
+  div.license-agreement__custom-checkbox
+    +customInput
+    align-items: normal
+    border-radius: 10px
+
+    &::after
+      width: 7px
+      height: 12px
+
+      top: 13%
+      rotate: 45deg
+
+      border-right: 2px $black solid
+      border-bottom: 2px $black solid
+
+  input.license-agreement__checkbox
+    display: none
+
+    &:checked + div.license-agreement__custom-checkbox::after
+      opacity: 1
+
+  p.license-agreement__contract, a.license-agreement__link
+    margin: 0
+    font-size: 17px
+    color: $gray300
+    letter-spacing: -0.01em
+
+  a.license-agreement__link
+    color: $black
+    text-decoration: none
+    border-bottom: 1px transparent solid
+    transition: .2s
+
+    &:hover
+      border-bottom: 1px $black solid
+
+    &:active
+      color: $green400
+      border-bottom: 1px $green400 solid
+
+
+@media screen and (max-width: 1300px)
+
+
+@media screen and (max-width: 1000px)
+
+
+@media screen and (max-width: 700px)

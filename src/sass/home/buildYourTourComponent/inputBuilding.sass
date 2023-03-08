@@ -1,0 +1,102 @@
+div.form-input-containers
+  display: inline-flex
+  flex-wrap: wrap
+  gap: 30px
+  row-gap: 33px
+
+
+div.tour-input-box
+  position: relative
+  width: calc(50% - 15px)
+
+  input.tour-input-box__input, select.tour-input-box__city-select
+    width: 100%
+    height: 68px
+
+    border: none
+    outline: none
+
+    background: $beige200
+    border-radius: 10px
+
+    box-sizing: border-box
+    font-size: 20px
+    padding: 20px
+
+    &::placeholder
+      color: $gray300
+
+  select.tour-input-box__city-select
+    appearance: none
+
+    option
+      color: $black
+
+    &:required:invalid, option[value='']
+      color: $gray300
+
+    &::before
+      content: ''
+      position: absolute
+      border-bottom: $black 1px solid
+      border-right: $black 1px solid
+      width: 10px
+      height: 10px
+      left: 0
+      bottom: 0
+
+  img.tour-input-box__select-arrow
+    position: absolute
+    right: 20px
+    bottom: 30px
+
+
+div.building-comment-input
+  width: 100%
+
+  textarea.building-comment-input__comment
+    width: 100%
+    height: 152px
+
+    padding: 20px
+    box-sizing: border-box
+
+    resize: none
+    outline: none
+    border: none
+
+    background: $beige200
+    border-radius: 10px
+
+
+@media screen and (max-width: 1300px)
+  form.tour-building-form
+    width: 918px
+    height: 966px
+    padding: 60px
+
+  div.form-input-containers
+    gap: 20px
+    row-gap: 33px
+
+  div.tour-input-box
+    width: calc(50% - 10px)
+
+
+@media screen and (max-width: 1000px)
+  div.form-input-containers
+    justify-content: space-between
+
+
+@media screen and (max-width: 700px)
+  div.form-input-containers
+    display: inline-flex
+    flex-direction: column
+    row-gap: 33px
+
+  div.tour-input-box
+    width: 100%
+
+    input.tour-input-box__input, select.tour-input-box__city-select
+      font-size: 16px
+      padding: 10px
