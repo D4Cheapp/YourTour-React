@@ -2,6 +2,9 @@
 
 section.choose-your-tour
   +sectionInit
+  margin-top: 135px
+  @media screen and (max-width: 700px)
+    margin-top: 75px
 
 div.choose-section
   display: inline-flex
@@ -29,6 +32,7 @@ div.tour-select
 
     cursor: pointer
     background: none
+    line-height: 28.06px
 
     color: $black
     font-weight: 700
@@ -58,9 +62,10 @@ div.tour-select
     justify-content: center
     flex-wrap: wrap
     gap: 10px
-    row-gap: 8px
 
     button.tour-select__button
       padding-bottom: 0
       font-size: 16px
-      line-height: 23px
+      height: 22.72px
+      box-sizing: border-box
+      line-height: 22.72px
