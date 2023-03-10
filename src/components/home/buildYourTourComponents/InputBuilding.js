@@ -1,4 +1,5 @@
 import React from 'react';
+import dropdown from '../../../images/svg/Dropdown.svg'
 
 function InputBuilding() {
     return (
@@ -15,7 +16,7 @@ function InputBuilding() {
                         Направление
                     </h3>
 
-                    <select className='tour-input-box__city-select' required>
+                    <select className='tour-input-box__city-select' style={{backgroundImage: `url(${dropdown})`}} required>
                         <option value='' defaultValue>Куда хотите ехать</option>
                         <option value='Paris'>Париж</option>
                         <option value='London'>Лондон</option>
@@ -37,13 +38,13 @@ function InputBuilding() {
                 }}/>
 
                 <InputBuilder title='Дата от' name='date-from' inputParams={{
-                    type: 'date',
+                    type: 'text',
                     placeholder:'ДД.ММ.ГГГГ',
                     pattern:'[0-3][0-9][\.|,][0-1][0-9][\.|,][1-2][0-9]{3}'
                 }}/>
 
                 <InputBuilder title='Дата до' name='date-before' inputParams={{
-                    type: 'date',
+                    type: 'text',
                     placeholder: 'ДД.ММ.ГГГГ',
                     pattern: '[0-3][0-9][\\.|,][0-1][0-9][\\.|,][1-2][0-9]{3}'
                 }}/>

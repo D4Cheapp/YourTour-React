@@ -28,6 +28,11 @@ div.tour-input-box
 
   select.tour-input-box__city-select
     appearance: none
+    cursor: pointer
+
+    background-repeat: no-repeat
+    background-position-y: center
+    background-position-x: calc(100% - 20px)
 
     option
       color: $black
@@ -35,24 +40,10 @@ div.tour-input-box
     &:required:invalid, option[value='']
       color: $gray300
 
-    &::before
-      content: ''
-      position: absolute
-      border-bottom: $black 1px solid
-      border-right: $black 1px solid
-      width: 10px
-      height: 10px
-      left: 0
-      bottom: 0
-
-  img.tour-input-box__select-arrow
-    position: absolute
-    right: 20px
-    bottom: 30px
-
 
 div.building-comment-input
   width: 100%
+  height: 188px
 
   textarea.building-comment-input__comment
     width: 100%
@@ -92,11 +83,20 @@ div.building-comment-input
   div.form-input-containers
     display: inline-flex
     flex-direction: column
-    row-gap: 33px
+    row-gap: 30px
 
   div.tour-input-box
     width: 100%
 
     input.tour-input-box__input, select.tour-input-box__city-select
       font-size: 16px
+      height: 43px
       padding: 10px
+
+    select.tour-input-box__city-select
+      height: 46px
+      padding-block: 11.5px
+      background-position-x: calc(100% - 14px)
+
+  div.building-comment-input
+    height: 163px

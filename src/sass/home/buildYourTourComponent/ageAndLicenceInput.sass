@@ -6,8 +6,9 @@
   justify-content: center
   align-items: center
 
-  width: 24px
-  height: 24px
+  box-sizing: border-box
+  width: 26px
+  height: 26px
 
   border: 2px $black solid
 
@@ -18,6 +19,16 @@
 
     transition: .2s
 
+  @media screen and (max-width: 700px)
+    width: 20px
+    height: 20px
+
+    border: 2px $black solid
+
+div.build-tour-age-check
+  height: 64px
+
+
 div.age-radio-buttons-container
   display: inline-flex
   gap: 31px
@@ -25,6 +36,7 @@ div.age-radio-buttons-container
 
 label.age-radio-button
   display: inline-flex
+  align-items: center
   gap: 11px
 
   div.age-radio-button__custom-checkbox
@@ -42,6 +54,7 @@ label.age-radio-button
     margin: 0
     font-weight: 400
     font-size: 20px
+    line-height: 28.4px
 
   input.age-radio-button__input
     display: none
@@ -53,12 +66,11 @@ label.age-radio-button
 label.license-agreement
   display: inline-flex
   align-items: center
-  gap: 11px
+  gap: 19px
 
   div.license-agreement__custom-checkbox
     +customInput
-    align-items: normal
-    border-radius: 10px
+    border-radius: 5px
 
     &::after
       width: 7px
@@ -97,9 +109,36 @@ label.license-agreement
 
 
 @media screen and (max-width: 1300px)
-
-
-@media screen and (max-width: 1000px)
+  label.license-agreement
+    display: inline-flex
+    align-items: center
+    gap: 11px
 
 
 @media screen and (max-width: 700px)
+  div.build-tour-age-check
+    height: 54px
+
+  div.age-radio-buttons-container
+    gap: 30px
+
+    div.age-radio-button__custom-checkbox::after
+      width: 10px
+      height: 10px
+
+  label.age-radio-button
+    gap: 10px
+
+    h4.age-radio-button__label
+      font-size: 16px
+      line-height: 23px
+
+  label.license-agreement
+    align-items: flex-start
+
+    p.license-agreement__contract, a.license-agreement__link
+      font-size: 16px
+      line-height: 23px
+
+    p.license-agreement__contract
+      width: 248px
