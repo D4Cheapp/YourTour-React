@@ -5,7 +5,7 @@ import {TourGallery} from "../../data/TourGallery";
 function TourPhotos() {
     return (
         <section className='tour-photos'>
-            <SectionTitle title='Фотографии путешествий' />
+            <SectionTitle title={`Фотографии путешествий`} sectionName='tour-photos'/>
 
             <div className="photos-section">
                 <PhotosRowCreate rowInfo={{
@@ -29,11 +29,10 @@ function TourPhotos() {
 
 function PhotosRowCreate({rowInfo}) {
     return(
-        <div className={`${rowInfo.row}-photos`}>
-            {rowInfo.pictures.map(picture =>
-                <img src={picture.src} alt={picture.name}
-                     className={`${rowInfo.row}-photos__image 
-                        ${rowInfo.row}-photos__image__${picture.name}`} key={picture.name}/>)}
+        <div className={`photos-row ${rowInfo.row}-photos`}>
+            {rowInfo.pictures.map((picture) =>
+                <img src={picture.src} alt={picture.name} key={picture.name}
+                    className={`${rowInfo.row}-photos__image ${rowInfo.row}-photos__image__${picture.name}`} />)}
         </div>
     )
 }
