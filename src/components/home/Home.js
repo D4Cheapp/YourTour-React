@@ -1,9 +1,10 @@
 import React from 'react';
+import '../../sass/home/home.sass'
 import Header from "./Header";
 import ChooseYourTour from "./ChooseYourTour";
 import BuildYourTour from "./BuildYourTour";
 import Feedback from "./Feedback";
-import '../../sass/home/home.sass'
+import TourPhotos from "./TourPhotos";
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <ChooseYourTour/>
             <BuildYourTour/>
             <Feedback/>
+            <TourPhotos/>
         </>
     )
 }

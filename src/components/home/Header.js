@@ -1,12 +1,12 @@
 import React from 'react';
-import headerBackground from '../../images/png/header/HeaderBackground.png';
+import HeaderBackground from '../../images/png/header/HeaderBackground.png';
 import {useNavigate} from "react-router-dom";
 
 function Header() {
     const navigation = useNavigate()
 
     return (
-        <header style={{backgroundImage: `url(${headerBackground})`}}>
+        <header style={{backgroundImage: `url(${HeaderBackground})`}}>
             <h1 className='header__title'>
                 Идеальные <br/>
                 путешествия <br/>
