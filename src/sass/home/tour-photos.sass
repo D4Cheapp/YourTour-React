@@ -3,6 +3,7 @@ section.tour-photos
 
 
 div.photos-section
+  margin-top: -3px
   display: inline-flex
   flex-direction: column
 
@@ -13,100 +14,102 @@ div.photos-section
   row-gap: 30px
 
 
-div.first-row-photos, div.second-row-photos, div.third-row-photos
+div.photos-row
   display: inline-flex
   justify-content: center
   height: 301px
   gap: 30px
 
-  img.first-row-photos__image, img.second-row-photos__image, img.third-row-photos__image
+  img.photos-row__image
     height: 100%
     object-fit: cover
     border-radius: 50px
 
 
 div.second-row-photos
-  img.second-row-photos__image
+  img.photos-row__image
     width: 347.32px
 
 
 div.first-row-photos, div.third-row-photos
-  img.first-row-photos__image, img.third-row-photos__image
+  img.photos-row__image
     width: 442.5px
 
 
 @media screen and (max-width: 1900px)
-  div.first-row-photos, div.second-row-photos, div.third-row-photos
+  div.photos-row
     gap: 20px
 
   div.first-row-photos, div.third-row-photos
-    img.first-row-photos__image, img.third-row-photos__image
+    img.photos-row__image
       height: 99%
       width: 23%
 
   div.second-row-photos
-    img.second-row-photos__image
+    img.photos-row__image
       height: 99%
       width: 18%
 
 
 @media screen and (max-width: 1200px)
-  div.first-row-photos, div.second-row-photos, div.third-row-photos
+  div.photos-row
     gap: 20px
 
   div.first-row-photos, div.third-row-photos
-    img.first-row-photos__image__desert
+    img.photos-row__image__desert
       display: none
 
-    img.third-row-photos__image__rowing
+    img.photos-row__image__rowing
       display: none
 
-    img.first-row-photos__image, img.third-row-photos__image
+    img.photos-row__image
+      height: 301px
       width: 314.67px
 
   div.second-row-photos
-    img.second-row-photos__image__bridge
+    img.photos-row__image__bridge
       display: none
 
-    img.second-row-photos__image
+    img.photos-row__image
+      height: 301px
       width: 231px
 
 @media screen and (max-width: 1000px)
   div.first-row-photos, div.third-row-photos
-    img.first-row-photos__image, img.third-row-photos__image
+    img.photos-row__image
       height: 99%
       width: 30%
 
   div.second-row-photos
-    img.second-row-photos__image
+    img.photos-row__image
       height: 99%
       width: 22%
 
-  div.first-row-photos, div.second-row-photos, div.third-row-photos
-    img.first-row-photos__image, img.second-row-photos__image, img.third-row-photos__image
+  div.photos-row
+    img.photos-row__image
       border-radius: 20px
 
 
 @media screen and (max-width: 800px)
   div.photos-section
-    margin-top: 10px
+    margin-top: 12px
 
   div.first-row-photos, div.third-row-photos
 
-    img.first-row-photos__image__hills
+    img.photos-row__image__hills
       display: none
 
-    img.third-row-photos__image__busy-street
+    img.photos-row__image__busy-street
       display: none
 
-    img.first-row-photos__image, img.third-row-photos__image
+    img.photos-row__image
       width: 40%
 
   div.second-row-photos
-    img.second-row-photos__image__map
+    img.photos-row__image__map
       display: none
 
-    img.second-row-photos__image
+    img.photos-row__image
       width: 25%
 
 @media screen and (max-width: 500px)
@@ -121,19 +124,22 @@ div.first-row-photos, div.third-row-photos
     height: 110px
     gap: 18px
 
-    img.first-row-photos__image
+    img.photos-row__image
+      height: 110px
       width: 150px
 
   div.third-row-photos
     height: 110px
     gap: 10px
 
-    img.third-row-photos__image
+    img.photos-row__image
+      height: 110px
       width: 154px
 
   div.second-row-photos
     height: 110px
     gap: 10px
 
-    img.second-row-photos__image
+    img.photos-row__image
+      height: 110px
       width: 100px

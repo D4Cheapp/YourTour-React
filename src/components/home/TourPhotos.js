@@ -30,9 +30,9 @@ function TourPhotos() {
 function PhotosRowCreate({rowInfo}) {
     return(
         <div className={`photos-row ${rowInfo.row}-photos`}>
-            {rowInfo.pictures.map((picture) =>
+            {rowInfo.pictures.map(picture =>
                 <img src={picture.src} alt={picture.name} key={picture.name}
-                    className={`${rowInfo.row}-photos__image ${rowInfo.row}-photos__image__${picture.name}`} />)}
+                    className={`photos-row__image photos-row__image__${picture.name}`} />)}
         </div>
     )
 }
