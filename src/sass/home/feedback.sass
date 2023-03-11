@@ -1,0 +1,112 @@
+section.users-feedback
+  +sectionInit
+
+
+div.feedback-container
+  width: 100%
+  display: inline-flex
+  justify-content: center
+  gap: 30px
+
+
+div.user-response
+  display: inline-flex
+  flex-direction: column
+  justify-content: space-between
+
+  width: 570px
+  height: 673px
+
+  padding: 40px
+  border-radius: 50px
+  box-sizing: border-box
+
+  background: $beige200
+
+  p.user-response__text
+    white-space: pre-wrap
+    margin: 0
+    font-weight: 700
+    font-size: 23px
+    line-height: 28px
+
+
+div.user-info-container
+  display: inline-flex
+  justify-content: space-between
+  align-items: flex-end
+  height: 145px
+
+  img.user-info-container__profile-picture
+    width: 75px
+    height: 75px
+    border-radius: 50%
+
+
+div.user-description
+  display: inline-flex
+  flex-direction: column
+  justify-content: flex-end
+
+  h3.user-info-container__name
+    margin: 0 0 8px
+    font-size: 35px
+    font-weight: 500
+    line-height: 122%
+
+  p.user-description__tour-name
+    margin: 0
+
+    line-height: 142%
+    letter-spacing: -0.01em
+
+    font-size: 17px
+    color: $gray300
+
+
+@media screen and (max-width: 1300px)
+  div.feedback-container
+    gap: 18px
+    width: 90%
+
+  div.user-response
+    width: auto
+    height: auto
+
+
+@media screen and (max-width: 1000px)
+
+
+@media screen and (max-width: 700px)
+  div.feedback-container
+    align-items: center
+    flex-direction: column
+    margin-top: 10px
+
+  div.user-response
+    padding: 20px
+    border-radius: 20px
+    width: 318px
+
+    p.user-response__text
+      width: 99%
+      line-height: 145%
+      font-size: 16px
+
+    &__0
+      height: 408px
+
+    &__1
+      height: 592px
+
+  div.user-info-container
+    height: 115px
+
+  div.user-description
+    h3.user-info-container__name
+      letter-spacing: 0.04em
+      font-weight: 700
+      font-size: 23px
+
+    p.user-description__tour-name
+      font-size: 16px

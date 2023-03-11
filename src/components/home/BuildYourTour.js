@@ -7,7 +7,7 @@ import FormBuildingButtons from "./buildYourTourComponents/FormBuildingButtons";
 function BuildYourTour() {
     return (
         <section className='build-your-tour'>
-            <SectionTitle title='Собери свой тур'/>
+            <SectionTitle title='Собери свой тур' isWrap={true}/>
 
             <form className='tour-building-form'>
                 <InputBuilding/>
