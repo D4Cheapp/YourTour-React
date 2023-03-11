@@ -5,7 +5,7 @@ import {UsersFeedback} from "../../data/UsersFeedback";
 function Feedback() {
     return (
         <section className='users-feedback'>
-            <SectionTitle title={`Отзывы наших\nпутешественников`}/>
+            <SectionTitle title={`Отзывы наших\nпутешественников`} sectionName='users-feedback'/>
 
             <div className="feedback-container">
                 {UsersFeedback.map((response,index) =>

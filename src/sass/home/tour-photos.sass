@@ -1,0 +1,145 @@
+section.tour-photos
+  +sectionInit
+
+
+div.photos-section
+  margin-top: -3px
+  display: inline-flex
+  flex-direction: column
+
+  align-items: center
+  justify-content: center
+
+  width: 100%
+  row-gap: 30px
+
+
+div.photos-row
+  display: inline-flex
+  justify-content: center
+  height: 301px
+  gap: 30px
+
+  img.photos-row__image
+    height: 100%
+    object-fit: cover
+    border-radius: 50px
+
+
+div.second-row-photos
+  img.photos-row__image
+    width: 347.32px
+
+
+div.first-row-photos, div.third-row-photos
+  img.photos-row__image
+    width: 442.5px
+
+
+@media screen and (max-width: 1900px)
+  div.photos-row
+    gap: 20px
+
+  div.first-row-photos, div.third-row-photos
+    img.photos-row__image
+      height: 99%
+      width: 23%
+
+  div.second-row-photos
+    img.photos-row__image
+      height: 99%
+      width: 18%
+
+
+@media screen and (max-width: 1200px)
+  div.photos-row
+    gap: 20px
+
+  div.first-row-photos, div.third-row-photos
+    img.photos-row__image__desert
+      display: none
+
+    img.photos-row__image__rowing
+      display: none
+
+    img.photos-row__image
+      height: 301px
+      width: 314.67px
+
+  div.second-row-photos
+    img.photos-row__image__bridge
+      display: none
+
+    img.photos-row__image
+      height: 301px
+      width: 231px
+
+@media screen and (max-width: 1000px)
+  div.first-row-photos, div.third-row-photos
+    img.photos-row__image
+      height: 99%
+      width: 30%
+
+  div.second-row-photos
+    img.photos-row__image
+      height: 99%
+      width: 22%
+
+  div.photos-row
+    img.photos-row__image
+      border-radius: 20px
+
+
+@media screen and (max-width: 800px)
+  div.photos-section
+    margin-top: 12px
+
+  div.first-row-photos, div.third-row-photos
+
+    img.photos-row__image__hills
+      display: none
+
+    img.photos-row__image__busy-street
+      display: none
+
+    img.photos-row__image
+      width: 40%
+
+  div.second-row-photos
+    img.photos-row__image__map
+      display: none
+
+    img.photos-row__image
+      width: 25%
+
+@media screen and (max-width: 500px)
+  div.section-title
+    h1.section-title__header-tour-photos
+      white-space: normal
+
+  div.photos-section
+    row-gap: 18px
+
+  div.first-row-photos
+    height: 110px
+    gap: 18px
+
+    img.photos-row__image
+      height: 110px
+      width: 150px
+
+  div.third-row-photos
+    height: 110px
+    gap: 10px
+
+    img.photos-row__image
+      height: 110px
+      width: 154px
+
+  div.second-row-photos
+    height: 110px
+    gap: 10px
+
+    img.photos-row__image
+      height: 110px
+      width: 100px

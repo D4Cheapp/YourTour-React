@@ -1,5 +1,5 @@
 import React from 'react';
-import dropdown from '../../../images/svg/Dropdown.svg'
+import Dropdown from '../../../images/svg/Dropdown.svg'
 
 function InputBuilding() {
     return (
@@ -16,7 +16,7 @@ function InputBuilding() {
                         Направление
                     </h3>
 
-                    <select className='tour-input-box__city-select' style={{backgroundImage: `url(${dropdown})`}} required>
+                    <select className='tour-input-box__city-select' style={{backgroundImage: `url(${Dropdown})`}} required>
                         <option value='' defaultValue>Куда хотите ехать</option>
                         <option value='Paris'>Париж</option>
                         <option value='London'>Лондон</option>

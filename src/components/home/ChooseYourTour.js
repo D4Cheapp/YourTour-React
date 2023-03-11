@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import cardArrow from '../../images/svg/CardsArrow.svg';
+import CardArrow from '../../images/svg/CardsArrow.svg';
 import PopularExcursions from "../../data/PopularExcursions";
 import {useNavigate} from "react-router-dom";
 
@@ -63,7 +63,7 @@ function CardCreating({info}) {
             <div className="tour-card__blackout"/>
 
             <button className="tour-card__more-button" onClick={() => navigator(`/tours`)}>
-                Подробнее <img src={cardArrow} alt='' loading='lazy'/>
+                Подробнее <img src={CardArrow} alt='' loading='lazy'/>
             </button>
         </div>
     )
