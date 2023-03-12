@@ -1,0 +1,76 @@
+section.cta-section
+  width: 100%
+  margin-top: 135px
+
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  gap: 30px
+
+  img.cta-section__image
+    width: 370px
+    height: 370px
+    border-radius: 50px
+
+
+div.cta-description-container
+  width: 371px
+
+  display: inline-flex
+  flex-direction: column
+  gap: 20px
+
+  h3.cta-description-container__title
+    margin: 0
+    font-weight: 500
+    font-size: 35px
+    line-height: 42.7px
+
+  p.cta-description-container__email-info
+    margin: 0
+    color: $gray300
+    font-size: 20px
+    line-height: 28px
+
+  a.cta-description-container__email-link
+    color: $black
+    text-decoration: none
+    +underline($black, 1px, $green400)
+
+
+@media screen and (max-width: 800px)
+  section.cta-section
+    flex-direction: column
+
+  div.cta-description-container
+    text-align: center
+
+
+@media screen and (max-width: 600px)
+  section.cta-section
+    img.cta-section__image
+      width: 60%
+      height: 60%
+
+
+@media screen and (max-width: 450px)
+  section.cta-section
+    margin-top: 75px
+
+    img.cta-section__image
+      width: 130px
+      height: 133px
+      border-radius: 20px
+
+  div.cta-description-container
+    width: 291px
+
+    h3.cta-description-container__title
+      font-weight: 700
+      font-size: 23px
+      line-height: 27.6px
+      letter-spacing: 0.04em
+
+    p.cta-description-container__email-info
+      font-size: 16px
+      line-height: 142%
