@@ -27,12 +27,17 @@ body
   overflow-x: hidden
   background: $mercury
 
-=underline ($color, $height)
+=underline ($color, $height, $activeColor:$color)
   border-bottom: $height transparent solid
   transition: .2s
 
   &:hover
-    border-bottom: $height $color solid
+    border-bottom-color: $color
+
+  &:active
+    color: $activeColor
+    border-bottom-color: $activeColor
+
 
 =sectionInit ()
   display: inline-flex
