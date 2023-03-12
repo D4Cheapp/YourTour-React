@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'normalize.css/normalize.css';
-import App from "./App";
+
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import App from "./App";
 import Home from "./components/home/Home";
 import ErrorPage from "./components/ErrorPage";
 
