@@ -1,0 +1,71 @@
+div.card-choosing-section
+  margin-top: 100px
+  width: 65%
+
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 30px
+
+
+div.tour-card
+  width: 370px
+  height: 531px
+  padding: 50px
+
+  button.tour-card__more-button
+    bottom: 43px
+    left: 30px
+
+
+div.tour-card-info
+  h1.tour-card-info__title
+    width: 90%
+
+  p.tour-card-info__description
+    font-size: 17px
+    line-height: 142%
+    letter-spacing: -0.01em
+
+
+@media screen and (max-width: 1800px)
+  div.card-choosing-section
+    width: 80%
+
+
+@media screen and (max-width: 1350px)
+  div.tour-card-info
+    h1.tour-card-info__title
+      width: 100%
+
+  div.card-choosing-section
+    width: 100%
+    gap: 18px
+
+  div.tour-card
+    width: 450px
+    height: 531px
+
+
+@media screen and (max-width: 950px)
+  div.card-choosing-section
+    flex-direction: column
+    align-items: center
+    margin-top: 51px
+
+
+@media screen and (max-width: 700px)
+  div.tour-card
+    width: 318px
+    height: 318px
+    padding: 25px
+
+    button.tour-card__more-button
+      bottom: 23px
+      left: 15px
+
+  div.tour-card-info
+    p.tour-card-info__description
+      font-size: 16px
+
+

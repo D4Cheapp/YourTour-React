@@ -1,7 +1,7 @@
 import MariaPP from '../images/png/users/Maria.png'
 import PavelPP from '../images/png/users/Pavel.png'
 
-export const UsersFeedback = [
+export const UsersFeedbackData = [
     {
       text: 'Идейные соображения высшего порядка, ' +
           'а также рамки и место обучения кадров ' +

@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from "./SectionTitle";
-import {UsersFeedback} from "../../data/UsersFeedback";
+import SectionTitle from "../SectionTitle";
+import {UsersFeedbackData} from "../../../data/UsersFeedbackData";
 
 function Feedback() {
     return (
@@ -8,7 +8,7 @@ function Feedback() {
             <SectionTitle title={`Отзывы наших\nпутешественников`} sectionName='users-feedback'/>
 
             <div className="feedback-container">
-                {UsersFeedback.map((response,index) =>
+                {UsersFeedbackData.map((response, index) =>
                     <ResponseCreate responseInfo={response} key={index} index={index}/>)}
             </div>
         </section>

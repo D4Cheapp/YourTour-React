@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from "./SectionTitle";
-import {TourGallery} from "../../data/TourGallery";
+import SectionTitle from "../SectionTitle";
+import {TourGalleryData} from "../../../data/TourGalleryData";
 
 function TourPhotos() {
     return (
@@ -10,17 +10,17 @@ function TourPhotos() {
             <div className="photos-section">
                 <PhotosRowCreate rowInfo={{
                     row: 'first-row',
-                    pictures: TourGallery.slice(0,4)
+                    pictures: TourGalleryData.slice(0,4)
                 }}/>
 
                 <PhotosRowCreate rowInfo={{
                     row: 'second-row',
-                    pictures: TourGallery.slice(4,9)
+                    pictures: TourGalleryData.slice(4,9)
                 }}/>
 
                 <PhotosRowCreate rowInfo={{
                     row: 'third-row',
-                    pictures: TourGallery.slice(9,13)
+                    pictures: TourGalleryData.slice(9,13)
                 }}/>
             </div>
         </section>

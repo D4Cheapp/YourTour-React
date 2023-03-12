@@ -1,10 +1,11 @@
 import React from 'react';
 import '../../sass/home/home.sass'
-import Header from "./Header";
-import ChooseYourTour from "./ChooseYourTour";
-import BuildYourTour from "./BuildYourTour";
-import Feedback from "./Feedback";
-import TourPhotos from "./TourPhotos";
+import Header from "./sections/Header";
+import ChooseYourTour from "./sections/ChooseYourTour";
+import BuildYourTour from "./sections/BuildYourTour";
+import Feedback from "./sections/Feedback";
+import TourPhotos from "./sections/TourPhotos";
+import TourHistory from "./sections/TourHistory";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <BuildYourTour/>
             <Feedback/>
             <TourPhotos/>
+            <TourHistory/>
         </>
     )
 }

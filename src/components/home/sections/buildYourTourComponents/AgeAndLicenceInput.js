@@ -39,7 +39,7 @@ function AgeAndLicenceInput() {
                 <p className="license-agreement__contract">
                     Нажимая кнопку, я принимаю условия 
 
-                    <a href="" className="license-agreement__link">
+                    <a href="src/components/home/sections/buildYourTourComponents" className="license-agreement__link">
                         Лицензионного договора
                     </a>
                 </p>

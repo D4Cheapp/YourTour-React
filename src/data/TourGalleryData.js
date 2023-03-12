@@ -14,7 +14,7 @@ import Lake from '../images/png/tourPhoto/Lake.png'
 import BusyStreet from '../images/png/tourPhoto/BusyStreet.png'
 import Rowing from '../images/png/tourPhoto/Rowing.png'
 
-export const TourGallery = [
+export const TourGalleryData = [
     {
         src: Plane,
         name: 'plane'
