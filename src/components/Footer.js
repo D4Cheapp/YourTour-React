@@ -1,14 +1,27 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import Instagram from '../images/svg/Instagram.svg'
 import Facebook from '../images/svg/Facebook.svg'
 import VKontakte from '../images/svg/VKontakte.svg'
 
 import '../sass/footer.sass';
+import {useNavigate} from "react-router-dom";
 
 function Footer() {
+    const navigate = useNavigate()
+
+    const [isErrorPage, setIsErrorPage] = useState(checkIsErrorPage())
+
+    useEffect(() => {
+        setIsErrorPage(checkIsErrorPage())
+    }, [navigate])
+
+    function checkIsErrorPage() {
+        return !!window.location.href.split('/').at(-1)
+    }
+
     return (
-        <footer>
+        <footer className={isErrorPage ? 'error-footer' : ''}>
             <p className="footer-description">
                 Наши социальные сети
             </p>

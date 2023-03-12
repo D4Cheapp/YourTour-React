@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import logo from '../images/png/header/HeaderLogo.png'
-import '../sass/navigation.sass'
 import {NavLink, useNavigate} from "react-router-dom";
+import '../sass/navigation.sass'
 
 function Navigation() {
     let scrollPosition = 0
@@ -12,7 +12,7 @@ function Navigation() {
 
     const navigate = useNavigate()
 
-    const [isBasePage, setIsBasePage] = useState(!!window.location.href.split('/').at(-1))
+    const [isErrorPage, setIsErrorPage] = useState(checkIsErrorPage())
 
     function scrollCheck() {
         scrollPosition = window.scrollY
@@ -26,11 +26,15 @@ function Navigation() {
     }
 
     useEffect(() => {
-        setIsBasePage(!!window.location.href.split('/').at(-1))
+        setIsErrorPage(checkIsErrorPage())
     }, [navigate])
 
+    function checkIsErrorPage() {
+        return !!window.location.href.split('/').at(-1)
+    }
+
     return (
-        <nav ref={navBar} className={ isBasePage ? 'scroll-navigation__error' : ''}>
+        <nav ref={navBar} className={ isErrorPage ? 'scroll-navigation__error' : ''}>
             <img className="navigation__logo" src={logo} alt="" onClick={() => navigate('/')}/>
 
             <div className="navigation-links">
