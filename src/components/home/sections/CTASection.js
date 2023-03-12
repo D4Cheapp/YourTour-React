@@ -7,9 +7,9 @@ function CtaSection() {
             <img src={CTAPicture} alt="" className="cta-section__image"/>
 
             <div className="cta-description-container">
-                <h3 className="cta-description-container__title">
+                <h2 className="cta-description-container__title">
                     Пора в путешествие вместе с нами!
-                </h3>
+                </h2>
 
                 <p className="cta-description-container__email-info">
                     Напиши на почту и узнай подробности на 

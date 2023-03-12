@@ -12,4 +12,4 @@
 + PostCSS
 
 ## Links
-View site on git pages [here](https://d4cheapp.github.io/YourTour-React/)
+View site on GitHub Pages [here](https://d4cheapp.github.io/YourTour-React/)
