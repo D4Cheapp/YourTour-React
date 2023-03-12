@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderBackground from '../../images/png/header/HeaderBackground.png';
+import HeaderBackground from '../../../images/png/header/HeaderBackground.png';
 import {useNavigate} from "react-router-dom";
 
 function Header() {

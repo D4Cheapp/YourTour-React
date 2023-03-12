@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import CardArrow from '../../images/svg/CardsArrow.svg';
-import PopularExcursions from "../../data/PopularExcursions";
-import {useNavigate} from "react-router-dom";
+import CardCreating from "../CardCreating";
+import PopularExcursionsData from "../../../data/PopularExcursionsData";
 
 function ChooseYourTour() {
     const [activeCategory, setActiveCategory] = useState('popular')
@@ -39,33 +38,10 @@ function ChooseYourTour() {
             </div>
 
             <div className="card-choosing-section">
-                {PopularExcursions.map((info,index) => <CardCreating info={info} key={index}/>)}
+                {PopularExcursionsData.map((info, index) =>
+                        <CardCreating info={info} key={index} cardName={'tour'}/>)}
             </div>
         </section>
-    )
-}
-
-function CardCreating({info}) {
-    const navigator = useNavigate()
-
-    return(
-        <div className="tour-card">
-            <div className="tour-card-info">
-                <h1 className="tour-card-info__title">
-                    {info.title}
-                </h1>
-                <p className="tour-card-info__price">
-                    {`от ${info.price.toLocaleString()} руб`}
-                </p>
-            </div>
-
-            <img className="tour-card__background-image" src={info.image} loading='lazy' alt=""/>
-            <div className="tour-card__blackout"/>
-
-            <button className="tour-card__more-button" onClick={() => navigator(`/tours`)}>
-                Подробнее <img src={CardArrow} alt='' loading='lazy'/>
-            </button>
-        </div>
     )
 }
 

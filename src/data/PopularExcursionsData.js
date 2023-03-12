@@ -5,7 +5,7 @@ import city from '../images/png/chooseYourTour/City.png'
 import beach from '../images/png/chooseYourTour/Beach.png'
 import lake from '../images/png/chooseYourTour/Lake.png'
 
-const PopularExcursions = [
+const PopularExcursionsData = [
     {
         title: 'Путешествие в горы',
         price: 80_000,
@@ -38,4 +38,4 @@ const PopularExcursions = [
     },
 ]
 
-export default PopularExcursions
+export default PopularExcursionsData

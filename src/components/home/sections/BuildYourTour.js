@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from './SectionTitle';
+import SectionTitle from '../SectionTitle';
 import InputBuilding from "./buildYourTourComponents/InputBuilding";
 import AgeAndLicenceInput from "./buildYourTourComponents/AgeAndLicenceInput";
 import FormBuildingButtons from "./buildYourTourComponents/FormBuildingButtons";
