@@ -46,7 +46,7 @@ export const HistoryData = [
             {
                 name: 'ВКонтакте',
                 link: 'https://vk.com/'
-            }
+            },
         ]
     },
     {
@@ -67,8 +67,8 @@ export const HistoryData = [
                 link: 'https://facebook.com/'
             },
             {
-                name: 'YouTube',
-                link: 'https://www.youtube.com/'
+                name: 'ВКонтакте',
+                link: 'https://vk.com/'
             },
         ]
     },

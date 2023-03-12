@@ -1,13 +1,15 @@
 import React from "react";
-import './sass/home/sections/header.sass';
 import Navigation from "./components/Navigation";
 import {Outlet} from "react-router-dom";
+import Footer from "./components/Footer";
+import './sass/home/sections/header.sass';
 
 function App() {
   return (
     <>
         <Navigation/>
         <Outlet/>
+        <Footer/>
     </>
   );
 }
