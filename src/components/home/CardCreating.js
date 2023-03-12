@@ -31,7 +31,7 @@ function CardCreating({info, cardName}) {
                 {info?.socialMedia &&
                     <div className={`base-card-social-media`}>
                         {info.socialMedia.map(media =>
-                            <Link to={media.link} key={media.name} className={`base-card-social-media__link`}>
+                            <Link target='_blank' to={media.link} key={media.name} className={`base-card-social-media__link`}>
                                 {media.name}
                             </Link>)}
                     </div>
