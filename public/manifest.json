@@ -1,8 +1,8 @@
 {
   "name": "YourTour",
   "short_name": "YT",
-  "theme_color": "#5e5e5e",
-  "background_color": "#5e5e5e",
+  "theme_color": "#286562",
+  "background_color": "#286562",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": ".",

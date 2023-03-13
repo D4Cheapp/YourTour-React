@@ -60,7 +60,7 @@ module.exports={
                         // Оптимизация всех изображений
                         loader: "webp-loader",
                         options: {
-                            quality: 75
+                            quality: 70
                         }
                     }
                 ]}],
