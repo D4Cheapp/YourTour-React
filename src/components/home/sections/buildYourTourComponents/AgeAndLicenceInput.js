@@ -4,9 +4,9 @@ function AgeAndLicenceInput() {
     return (
         <>
             <div className="build-tour-age-check">
-                <h3 className="build-tour-age-check__title form-title">
+                <h5 className="build-tour-age-check__title form-title">
                     Вам есть 18 лет?
-                </h3>
+                </h5>
 
                 <div className="age-radio-buttons-container">
                     <label className="age-radio-button">

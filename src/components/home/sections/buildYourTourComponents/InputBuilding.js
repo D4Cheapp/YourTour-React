@@ -12,9 +12,9 @@ function InputBuilding() {
                 }}/>
 
                 <div className='tour-input-box'>
-                    <h3 className='tour-input-box__title form-title'>
+                    <h5 className='tour-input-box__title form-title'>
                         Направление
-                    </h3>
+                    </h5>
 
                     <select className='tour-input-box__city-select' style={{backgroundImage: `url(${Dropdown})`}} required>
                         <option value='' defaultValue>Куда хотите ехать</option>
@@ -51,9 +51,9 @@ function InputBuilding() {
             </div>
 
             <div className="building-comment-input">
-                <h3 className="building-comment-input__title form-title">
+                <h5 className="building-comment-input__title form-title">
                     Комментарий
-                </h3>
+                </h5>
 
                 <textarea rows="8" cols="135" className="building-comment-input__comment"/>
             </div>
@@ -64,9 +64,9 @@ function InputBuilding() {
 function InputBuilder({title, name, inputParams}) {
     return (
         <div className='tour-input-box'>
-            <h3 className='tour-input-box__title form-title'>
+            <h5 className='tour-input-box__title form-title'>
                 {title}
-            </h3>
+            </h5>
 
             <input className={'tour-input-box__input' + ' tour-input-box__input__' + name} {...inputParams}/>
         </div>

@@ -24,9 +24,9 @@ function ResponseCreate({responseInfo, index}) {
 
             <div className="user-info-container">
                 <div className="user-description">
-                    <h3 className="user-info-container__name">
+                    <h2 className="user-info-container__name">
                         {responseInfo.userInfo.name}
-                    </h3>
+                    </h2>
 
                     <p className="user-description__tour-name">
                         {`Тур: ${responseInfo.userInfo.tour}`}
