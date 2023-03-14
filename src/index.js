@@ -9,6 +9,14 @@ import ErrorPage from "./components/ErrorPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+window.addEventListener('load', () => {
+    if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/serviceWorker.js')
+                .catch((error) => console.error(error))
+    }
+})
+
+
 const router = createBrowserRouter([
     {
         path: '/',
