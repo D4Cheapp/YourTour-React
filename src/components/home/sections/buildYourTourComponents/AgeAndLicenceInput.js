@@ -1,6 +1,12 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 
-function AgeAndLicenceInput() {
+function AgeAndLicenceInput({setButtons}) {
+    const buttons = useRef()
+
+    useEffect(() => {
+        setButtons(buttons)
+    },[])
+
     return (
         <>
             <div className="build-tour-age-check">
@@ -10,7 +16,8 @@ function AgeAndLicenceInput() {
 
                 <div className="age-radio-buttons-container">
                     <label className="age-radio-button">
-                        <input type="radio" name='age' className="age-radio-button__input"/>
+                        <input type="radio" name='age' className="age-radio-button__input"
+                               ref={buttons} required/>
 
                         <div className="age-radio-button__custom-checkbox"/>
 
