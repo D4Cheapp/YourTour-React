@@ -23,7 +23,6 @@ coverage
 
 # Compiled binary addons
 build/Release
-dist
 
 # Dependency directory
 node_modules
@@ -114,11 +113,6 @@ $RECYCLE.BIN/
 
 ### Less ###
 *.css
-
-
-### grunt ###
-# Grunt usually compiles files inside this directory
-dist/
 
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
