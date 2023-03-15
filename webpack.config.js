@@ -5,7 +5,10 @@ const path = require('path');
 module.exports={
     //Режим проекта и точка входа
     mode: 'development',
-    entry: path.resolve(__dirname,'./src/index.js'),
+    entry: {
+        main: path.resolve(__dirname,'./src/index.js'),
+        sw: path.resolve(__dirname,'./public/serviceWorker.js'),
+    },
     optimization: {
         runtimeChunk: 'single',
     },
@@ -21,6 +24,7 @@ module.exports={
     },
     //Выходной main файл
     output: {
+        publicPath: "/YourTour-React/",
         filename: `[name].js`,
         path: path.resolve(__dirname,'dist')
     },
@@ -68,6 +72,7 @@ module.exports={
     plugins: [new HtmlWebpackPlugin({
         template: path.resolve(__dirname,'./public/index.html'),
         favicon: path.resolve(__dirname,'./public/favicon.ico')
-    }),
-        new CleanWebpackPlugin()]
+        }),
+        new CleanWebpackPlugin()
+    ]
 }

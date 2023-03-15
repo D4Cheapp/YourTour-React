@@ -30,7 +30,7 @@ function Navigation() {
     }, [navigate])
 
     function checkIsErrorPage() {
-        return !!window.location.href.split('/').at(-1)
+        return !!window.location.href.split('/YourTour-React/').at(-1)
     }
 
     return (
