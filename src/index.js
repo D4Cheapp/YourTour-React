@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         ]
     }
 ],
-    {basename : '/'}
+    {basename : '/YourTour-React/'}
 )
 
 root.render(
