@@ -2,7 +2,7 @@ const urlsToCache = ['index.html','favicon.ico', 'main.js']
 
 self.addEventListener('install', async () => {
     const cache =  await caches.open('YourTour')
-    await cache.addAll(urlsToCache)
+    await cache.addAll(urlsToCache).catch(err => console.error(err))
 })
 
 self.addEventListener('fetch', (event) => {

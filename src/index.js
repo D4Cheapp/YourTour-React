@@ -30,11 +30,11 @@ const router = createBrowserRouter([
                 path: '/*',
                 element: <ErrorPage/>,
             }
-        ],
+        ]
     }
-], {
-    basename: '/YourTour-React/'
-})
+],
+    {basename : '/'}
+)
 
 root.render(
     <RouterProvider router={router}/>

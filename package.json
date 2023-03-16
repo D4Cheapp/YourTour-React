@@ -2,6 +2,8 @@
   "name": "your_tour_react",
   "version": "0.1.0",
   "main": "src/index.js",
+  "homepage": "https://d4cheapp.github.io/YourTour-React/",
+  "private": false,
   "scripts": {
     "start": "webpack-dev-server",
     "prod": "webpack --mode=production --define-process-env-node-env=production"
