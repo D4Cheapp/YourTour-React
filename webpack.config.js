@@ -24,9 +24,8 @@ module.exports={
     },
     //Выходной main файл
     output: {
-        publicPath: "/YourTour-React/",
         filename: `[name].js`,
-        path: path.resolve(__dirname,'dist')
+        path: path.resolve(__dirname,'docs')
     },
     resolve: {
         extensions: ['.ts', '.jsx', '.js', '.json']
