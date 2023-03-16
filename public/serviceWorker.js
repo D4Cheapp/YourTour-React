@@ -1,4 +1,4 @@
-const urlsToCache = ['index.html','favicon.ico', 'main.js']
+const urlsToCache = ['index.html','favicon.ico', 'main.js', 'src/images/png/header/HeaderBackground.png']
 
 self.addEventListener('install', async () => {
     const cache =  await caches.open('YourTour')
