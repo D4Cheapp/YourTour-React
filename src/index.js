@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'normalize.css/normalize.css';
 
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createHashRouter, RouterProvider} from "react-router-dom";
 import App from "./App";
 import Home from "./components/home/Home";
 import ErrorPage from "./components/ErrorPage";
@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
 })
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/',
         element: <App/>,
@@ -32,9 +32,7 @@ const router = createBrowserRouter([
             }
         ]
     }
-],
-    {basename : '/YourTour-React/'}
-)
+])
 
 root.render(
     <RouterProvider router={router}/>
