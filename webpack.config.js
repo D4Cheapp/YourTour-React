@@ -7,7 +7,6 @@ module.exports={
     mode: 'development',
     entry: {
         main: path.resolve(__dirname,'./src/index.js'),
-        sw: path.resolve(__dirname,'./public/serviceWorker.js'),
     },
     optimization: {
         runtimeChunk: 'single',
@@ -17,7 +16,6 @@ module.exports={
     },
     //Настройки сервера
     devServer: {
-        static: path.resolve(__dirname, 'public'),
         watchFiles: [path.resolve(__dirname,"src")],
         historyApiFallback: true,
         port:3000,
@@ -25,7 +23,6 @@ module.exports={
     },
     //Выходной main файл
     output: {
-        publicPath: "/",
         filename: `[name].js`,
         path: path.resolve(__dirname,'docs')
     },
