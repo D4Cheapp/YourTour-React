@@ -7,7 +7,6 @@ module.exports={
     mode: 'development',
     entry: {
         main: path.resolve(__dirname,'./src/index.js'),
-        sw: path.resolve(__dirname,'./public/serviceWorker.js'),
     },
     optimization: {
         runtimeChunk: 'single',
