@@ -4,6 +4,7 @@ import InputBuilding from "./components/InputBuilding";
 import AgeAndLicenceInput from "./components/AgeAndLicenceInput";
 import FormBuildingButtons from "./components/FormBuildingButtons";
 import {useNavigate} from "react-router-dom";
+import './BuildYourTour.sass';
 
 function BuildYourTour() {
     const navigator = useNavigate()

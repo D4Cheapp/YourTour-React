@@ -8,10 +8,7 @@ import TourPhotos from "./components/TourPhotos";
 import TourHistory from "./components/TourHistory";
 import CTASection from "./components/CTASection";
 
-import './Home.sass'
-
-
-function Home() {
+function Index() {
     return (
         <>
             <Header/>
@@ -25,4 +22,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Index;

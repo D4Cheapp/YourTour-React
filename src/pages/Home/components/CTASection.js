@@ -1,5 +1,6 @@
 import React from 'react';
-import CTAPicture from '../../../images/png/cta/ctaPicture.png'
+import CTAPicture from '../../../images/png/cta/ctaPicture.png';
+import './CTASection.sass';
 
 function CtaSection() {
     return (

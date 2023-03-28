@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from "../SectionTitle";
 import {UsersFeedbackData} from "../../../data/UsersFeedbackData";
+import './Feedback.sass'
 
 function Feedback() {
     return (

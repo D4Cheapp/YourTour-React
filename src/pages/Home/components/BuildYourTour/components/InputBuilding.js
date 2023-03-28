@@ -1,5 +1,6 @@
 import React from 'react';
-import Dropdown from '../../../../../images/svg/Dropdown.svg'
+import Dropdown from '../../../../../images/svg/Dropdown.svg';
+import './InputBuilding.sass';
 
 function InputBuilding() {
     function dateRefactoring(event) {

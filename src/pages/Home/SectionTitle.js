@@ -1,4 +1,5 @@
 import React from 'react';
+import './SectionTitle.sass';
 
 function SectionTitle({title, isWrap, sectionName}) {
     return (

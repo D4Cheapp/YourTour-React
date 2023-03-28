@@ -5,7 +5,7 @@ import 'normalize.css/normalize.css';
 import {createHashRouter, RouterProvider} from "react-router-dom";
 import App from "./App";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import Home from "./pages/Home/Home";
+import Index from "./pages/Home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -16,7 +16,7 @@ const router = createHashRouter([
         children: [
             {
                 path: '/',
-                element: <Home/>,
+                element: <Index/>,
             },
             {
                 path: '/*',

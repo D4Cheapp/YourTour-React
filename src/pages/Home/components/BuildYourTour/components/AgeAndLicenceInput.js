@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import './AgeAndLicenceInput.sass'
 
 function AgeAndLicenceInput({setButtons}) {
     const buttons = useRef()

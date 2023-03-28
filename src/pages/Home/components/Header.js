@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderBackground from '../../../images/png/header/HeaderBackground.png';
 import {useNavigate} from "react-router-dom";
+import './Header.sass';
 
 function Header() {
     const navigation = useNavigate()
