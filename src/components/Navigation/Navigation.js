@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import logo from '../images/png/header/HeaderLogo.png'
+import logo from '../../images/png/header/HeaderLogo.png'
 import {NavLink, useNavigate} from "react-router-dom";
 import './Navigation.sass'
 

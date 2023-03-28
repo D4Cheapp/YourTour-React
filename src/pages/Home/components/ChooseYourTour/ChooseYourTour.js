@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import CardCreating from "../../CardCreating";
+import CardCreating from "../CardCreating/CardCreating";
 import PopularExcursionsData from "../../../../data/PopularExcursionsData";
 import './ChooseYourTour.sass';
 import './ChooseYourTourCards.sass';

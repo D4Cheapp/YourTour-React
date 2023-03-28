@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from "../SectionTitle";
-import {TourGalleryData} from "../../../data/TourGalleryData";
+import SectionTitle from "../SectionTitle/SectionTitle";
+import {TourGalleryData} from "../../../../data/TourGalleryData";
 import './TourPhotos.sass';
 
 function TourPhotos() {

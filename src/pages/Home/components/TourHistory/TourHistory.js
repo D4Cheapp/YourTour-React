@@ -1,7 +1,7 @@
 import React from 'react';
-import {HistoryData} from "../../../data/HistoryData";
-import SectionTitle from "../SectionTitle";
-import CardCreating from "../CardCreating";
+import {HistoryData} from "../../../../data/HistoryData";
+import SectionTitle from "../SectionTitle/SectionTitle";
+import CardCreating from "../CardCreating/CardCreating";
 import './TourHistory.sass';
 
 function TourHistory() {

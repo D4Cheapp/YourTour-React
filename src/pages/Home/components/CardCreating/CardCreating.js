@@ -1,5 +1,5 @@
 import {Link, useNavigate} from "react-router-dom";
-import CardArrow from "../../images/svg/CardsArrow.svg";
+import CardArrow from "../../../../images/svg/CardsArrow.svg";
 import React from "react";
 import './CardCreation.sass';
 

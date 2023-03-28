@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
-import SectionTitle from '../../SectionTitle';
-import InputBuilding from "./components/InputBuilding";
-import AgeAndLicenceInput from "./components/AgeAndLicenceInput";
-import FormBuildingButtons from "./components/FormBuildingButtons";
+import {AgeAndLicenceInput, FormBuildingButtons, InputBuilding} from "./components";
+import {SectionTitle} from "../SectionTitle";
 import {useNavigate} from "react-router-dom";
+import React, {useState} from 'react';
 import './BuildYourTour.sass';
 
 function BuildYourTour() {
