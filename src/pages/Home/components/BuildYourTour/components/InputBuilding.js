@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from '../../../../images/svg/Dropdown.svg'
+import Dropdown from '../../../../../images/svg/Dropdown.svg'
 
 function InputBuilding() {
     function dateRefactoring(event) {

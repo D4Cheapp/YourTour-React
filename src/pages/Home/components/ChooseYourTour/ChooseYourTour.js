@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import CardCreating from "../CardCreating";
-import PopularExcursionsData from "../../../data/PopularExcursionsData";
+import CardCreating from "../../CardCreating";
+import PopularExcursionsData from "../../../../data/PopularExcursionsData";
 
 function ChooseYourTour() {
     const [activeCategory, setActiveCategory] = useState('popular')

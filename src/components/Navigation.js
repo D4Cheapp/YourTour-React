@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import logo from '../images/png/header/HeaderLogo.png'
 import {NavLink, useNavigate} from "react-router-dom";
-import '../sass/navigation.sass'
+import './Navigation.sass'
 
 function Navigation() {
     let scrollPosition = 0

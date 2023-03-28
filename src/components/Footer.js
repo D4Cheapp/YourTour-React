@@ -4,7 +4,7 @@ import Instagram from '../images/svg/Instagram.svg'
 import Facebook from '../images/svg/Facebook.svg'
 import VKontakte from '../images/svg/VKontakte.svg'
 
-import '../sass/footer.sass';
+import './Footer.sass';
 import {useNavigate} from "react-router-dom";
 
 function Footer() {

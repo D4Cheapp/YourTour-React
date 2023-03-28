@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import SectionTitle from '../SectionTitle';
-import InputBuilding from "./buildYourTourComponents/InputBuilding";
-import AgeAndLicenceInput from "./buildYourTourComponents/AgeAndLicenceInput";
-import FormBuildingButtons from "./buildYourTourComponents/FormBuildingButtons";
+import SectionTitle from '../../SectionTitle';
+import InputBuilding from "./components/InputBuilding";
+import AgeAndLicenceInput from "./components/AgeAndLicenceInput";
+import FormBuildingButtons from "./components/FormBuildingButtons";
 import {useNavigate} from "react-router-dom";
 
 function BuildYourTour() {

@@ -4,8 +4,8 @@ import 'normalize.css/normalize.css';
 
 import {createHashRouter, RouterProvider} from "react-router-dom";
 import App from "./App";
-import Home from "./components/home/Home";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import Home from "./pages/Home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

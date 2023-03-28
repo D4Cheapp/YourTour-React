@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/error.sass';
+import './ErrorPage.sass';
 
 function ErrorPage() {
     return (
