@@ -1,10 +1,10 @@
 import React from 'react';
-import './LicenceInput.sass';
+import './LicenseInput.sass';
 
-function LicenceInput() {
+function LicenseInput() {
     return (
         <label className="licence-agreement">
-            <input type="checkbox" className="licence-agreement__checkbox"/>
+            <input type="checkbox" className="licence-agreement__checkbox" required/>
 
             <div className="licence-agreement__custom-checkbox"/>
 
@@ -19,4 +19,4 @@ function LicenceInput() {
     );
 }
 
-export default LicenceInput;
+export default LicenseInput;
