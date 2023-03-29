@@ -1,0 +1,58 @@
+label.licence-agreement
+  display: inline-flex
+  align-items: center
+  gap: 19px
+
+  div.licence-agreement__custom-checkbox
+    +customInput
+    border-radius: 5px
+
+    &::after
+      width: 7px
+      height: 12px
+
+      top: 13%
+      rotate: 45deg
+
+      border-right: 2px $black solid
+      border-bottom: 2px $black solid
+
+  input.licence-agreement__checkbox
+    display: none
+
+    &:checked + div.licence-agreement__custom-checkbox::after
+      opacity: 1
+
+  p.licence-agreement__contract, a.licence-agreement__link
+    margin: 0
+    font-size: 17px
+    color: $gray300
+    letter-spacing: -0.01em
+
+  a.licence-agreement__link
+    text-decoration: none
+    color: $black
+    +underline($black, 1px, $green400)
+
+
+@media screen and (max-width: 1300px)
+  label.licence-agreement
+    display: inline-flex
+    align-items: center
+    gap: 11px
+
+
+@media screen and (max-width: 700px)
+  label.licence-agreement
+    align-items: flex-start
+
+    p.licence-agreement__contract, a.licence-agreement__link
+      font-size: 16px
+      line-height: 23px
+
+    p.licence-agreement__contract
+      width: 248px
+
+    div.licence-agreement__custom-checkbox::after
+      width: 4px
+      height: 8px

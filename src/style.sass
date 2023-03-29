@@ -45,3 +45,30 @@ body
   align-items: center
   flex-direction: column
   width: 100%
+
+=customInput ()
+  position: relative
+  cursor: pointer
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  box-sizing: border-box
+  width: 26px
+  height: 26px
+
+  border: 2px $black solid
+
+  &::after
+    position: absolute
+    content: ''
+    opacity: 0
+
+    transition: .2s
+
+  @media screen and (max-width: 700px)
+    width: 20px
+    height: 20px
+
+    border: 2px $black solid
