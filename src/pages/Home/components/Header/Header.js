@@ -8,6 +8,8 @@ function Header() {
 
     return (
         <header style={{backgroundImage: `url(${HeaderBackground})`}}>
+            <div className="header__blackout"/>
+
             <h1 className='header__title'>
                 Идеальные <br/>
                 путешествия <br/>
