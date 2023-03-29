@@ -28,7 +28,7 @@ function AgeInput({setAgeValidation}) {
                     </label>
 
                     <label className="age-radio-button">
-                        <input type="radio" name='age' value='young' className="age-radio-button__input"/>
+                        <input type="radio" name='age' value='young' className="age-radio-button__input" required/>
 
                         <div className="age-radio-button__custom-checkbox"/>
 
