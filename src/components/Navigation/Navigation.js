@@ -35,7 +35,7 @@ function Navigation() {
 
     return (
         <nav ref={navBar} className={ isErrorPage ? 'scroll-navigation__error' : ''}>
-            <img className="navigation__logo" src={logo} alt="" onClick={() => navigate('/')}/>
+            <img className="navigation__logo" src={logo} alt="logo" onClick={() => navigate('/')}/>
 
             <div className="navigation-links">
                 <NavLink to="/tours" className="navigation-links__link">

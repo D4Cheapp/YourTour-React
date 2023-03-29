@@ -9,32 +9,38 @@ const PopularExcursionsData = [
     {
         title: 'Путешествие в горы',
         price: 80_000,
-        image: bus
+        image: bus,
+        name: 'bus'
     },
     {
         title: 'Путешествие в горы',
         price: 80_000,
-        image: desert
+        image: desert,
+        name: 'desert'
     },
     {
         title: 'Путешествие в горы',
         price: 80_000,
-        image: hills
+        image: hills,
+        name: 'hills'
     },
     {
         title: 'Путешествие в горы',
         price: 80_000,
-        image: city
+        image: city,
+        name: 'city'
     },
     {
         title: 'Путешествие в горы',
         price: 80_000,
-        image: beach
+        image: beach,
+        name: 'beach'
     },
     {
         title: 'Путешествие в горы',
         price: 80_000,
-        image: lake
+        image: lake,
+        name: 'lake'
     },
 ]
 

@@ -35,7 +35,7 @@ function ReviewTemplate({responseInfo, index}) {
                 </div>
 
                 <img className="user-info-container__profile-picture"
-                     src={responseInfo.userInfo.profilePicture} alt=""/>
+                     src={responseInfo.userInfo.profilePicture} alt={responseInfo.userInfo.name}/>
             </div>
         </div>
     )
