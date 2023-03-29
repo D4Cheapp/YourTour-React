@@ -9,17 +9,17 @@ function TourPhotos() {
             <SectionTitle title={`Фотографии путешествий`} sectionName='tour-photos'/>
 
             <div className="photos-section">
-                <PhotosRowCreate rowInfo={{
+                <PhotosRowTemplate rowInfo={{
                     row: 'first-row',
                     pictures: TourGalleryData.slice(0,4)
                 }}/>
 
-                <PhotosRowCreate rowInfo={{
+                <PhotosRowTemplate rowInfo={{
                     row: 'second-row',
                     pictures: TourGalleryData.slice(4,9)
                 }}/>
 
-                <PhotosRowCreate rowInfo={{
+                <PhotosRowTemplate rowInfo={{
                     row: 'third-row',
                     pictures: TourGalleryData.slice(9,13)
                 }}/>
@@ -28,7 +28,7 @@ function TourPhotos() {
     );
 }
 
-function PhotosRowCreate({rowInfo}) {
+function PhotosRowTemplate({rowInfo}) {
     return(
         <div className={`photos-row ${rowInfo.row}-photos`}>
             {rowInfo.pictures.map(picture =>

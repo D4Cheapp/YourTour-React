@@ -1,7 +1,7 @@
 import React from 'react';
-import './FormBuildingButtons.sass';
+import './FormButtons.sass';
 
-function FormBuildingButtons() {
+function FormButtons() {
     return (
         <div className='form-building-buttons'>
             <button className="form-building-buttons__button form-building-buttons__button__submit" type='submit'>
@@ -15,4 +15,4 @@ function FormBuildingButtons() {
     );
 }
 
-export default FormBuildingButtons;
+export default FormButtons;

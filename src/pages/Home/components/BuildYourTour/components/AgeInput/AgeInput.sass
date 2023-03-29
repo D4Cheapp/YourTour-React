@@ -1,0 +1,55 @@
+div.build-tour-age-check
+  height: 64px
+
+
+div.age-radio-buttons-container
+  display: inline-flex
+  gap: 31px
+
+
+label.age-radio-button
+  display: inline-flex
+  align-items: center
+  gap: 11px
+
+  div.age-radio-button__custom-checkbox
+    +customInput
+    border-radius: 50%
+
+    &::after
+      width: 12px
+      height: 12px
+
+      background: $black
+      border-radius: 50%
+
+  h4.age-radio-button__label
+    margin: 0
+    font-weight: 400
+    font-size: 20px
+    line-height: 28.4px
+
+  input.age-radio-button__input
+    display: none
+
+    &:checked + div.age-radio-button__custom-checkbox::after
+        opacity: 1
+
+
+@media screen and (max-width: 700px)
+  div.build-tour-age-check
+    height: 54px
+
+  div.age-radio-buttons-container
+    gap: 30px
+
+    div.age-radio-button__custom-checkbox::after
+      width: 10px
+      height: 10px
+
+  label.age-radio-button
+    gap: 10px
+
+    h4.age-radio-button__label
+      font-size: 16px
+      line-height: 23px

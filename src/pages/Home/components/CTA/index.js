@@ -1,1 +1,1 @@
-export {default as CTASection} from './CTASection.js'
+export {default as CTASection} from './CTA.js'

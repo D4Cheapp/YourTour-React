@@ -27,17 +27,17 @@ function Footer() {
             </p>
 
             <div className="footer-social-media">
-                <CreateSocialMediaLink image={Instagram} name='instagram' link='https://instagram.com/'/>
+                <SocialMediaLink image={Instagram} name='instagram' link='https://instagram.com/'/>
 
-                <CreateSocialMediaLink image={Facebook} name='facebook' link='https://facebook.com/'/>
+                <SocialMediaLink image={Facebook} name='facebook' link='https://facebook.com/'/>
 
-                <CreateSocialMediaLink image={VKontakte} name='vkontakte' link='https://vk.com/'/>
+                <SocialMediaLink image={VKontakte} name='vkontakte' link='https://vk.com/'/>
             </div>
         </footer>
     );
 }
 
-function CreateSocialMediaLink({image, name, link}) {
+function SocialMediaLink({image, name, link}) {
     return (
         <div className={`social-media-container social-media-container__${name}`}>
             <div className="icon-container">

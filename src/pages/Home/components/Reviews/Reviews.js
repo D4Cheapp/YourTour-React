@@ -1,22 +1,22 @@
 import React from 'react';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import {UsersFeedbackData} from "../../../../data/UsersFeedbackData";
-import './Feedback.sass'
+import './Reviews.sass'
 
-function Feedback() {
+function Reviews() {
     return (
         <section className='users-feedback'>
             <SectionTitle title={`Отзывы наших\nпутешественников`} sectionName='users-feedback'/>
 
             <div className="feedback-container">
                 {UsersFeedbackData.map((response, index) =>
-                    <ResponseCreate responseInfo={response} key={index} index={index}/>)}
+                    <ReviewTemplate responseInfo={response} key={index} index={index}/>)}
             </div>
         </section>
     );
 }
 
-function ResponseCreate({responseInfo, index}) {
+function ReviewTemplate({responseInfo, index}) {
     return(
         <div className={`user-response user-response__${index}`}>
             <p className="user-response__text">
@@ -41,4 +41,4 @@ function ResponseCreate({responseInfo, index}) {
     )
 }
 
-export default Feedback;
+export default Reviews;

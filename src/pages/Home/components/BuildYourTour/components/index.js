@@ -1,5 +1,6 @@
-import InputBuilding from './InputBuilding'
-import FormBuildingButtons from './FormBuildingButtons'
-import AgeAndLicenceInput from './AgeAndLicenceInput'
+import {FormInputFields} from './FormInputFields'
+import {FormButtons} from './FormButtons'
+import {LicenceInput} from "./LiceceInput";
+import {AgeInput} from './AgeInput'
 
-export {InputBuilding, FormBuildingButtons, AgeAndLicenceInput}
+export {FormInputFields, LicenceInput, FormButtons, AgeInput}

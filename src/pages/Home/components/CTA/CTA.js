@@ -1,8 +1,8 @@
 import React from 'react';
 import CTAPicture from '../../../../images/png/cta/ctaPicture.png';
-import './CTASection.sass';
+import './CTA.sass';
 
-function CTASection() {
+function CTA() {
     return (
         <section className='cta-section'>
             <img src={CTAPicture} alt="" className="cta-section__image"/>
@@ -24,4 +24,4 @@ function CTASection() {
     );
 }
 
-export default CTASection
+export default CTA

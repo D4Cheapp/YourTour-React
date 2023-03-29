@@ -1,4 +1,4 @@
-import {AgeAndLicenceInput, FormBuildingButtons, InputBuilding} from "./components";
+import {AgeInput, FormButtons, FormInputFields, LicenceInput} from "./components";
 import {SectionTitle} from "../SectionTitle";
 import {useNavigate} from "react-router-dom";
 import React, {useState} from 'react';
@@ -7,12 +7,12 @@ import './BuildYourTour.sass';
 function BuildYourTour() {
     const navigator = useNavigate()
 
-    const [ageButtons, setAgeButtons] = useState()
+    const [confirmAgeButton, setConfirmAgeButton] = useState()
 
     function redirectAfterSubmit(event) {
         event.preventDefault()
 
-        if (ageButtons?.current.checked) {
+        if (confirmAgeButton?.current.checked) {
             navigator('/build-tour')
         }
         else {
@@ -27,11 +27,13 @@ function BuildYourTour() {
             <form className='tour-building-form'
                   onSubmit={(event) => redirectAfterSubmit(event)}>
 
-                <InputBuilding/>
+                <FormInputFields/>
 
-                <AgeAndLicenceInput setButtons={setAgeButtons}/>
+                <AgeInput setAgeValidation={setConfirmAgeButton}/>
 
-                <FormBuildingButtons/>
+                <LicenceInput/>
+
+                <FormButtons/>
             </form>
         </section>
     );

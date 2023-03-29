@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import CardCreating from "../CardCreating/CardCreating";
+import CardTemplate from "../CardTemplate/CardTemplate";
 import PopularExcursionsData from "../../../../data/PopularExcursionsData";
 import './ChooseYourTour.sass';
 import './ChooseYourTourCards.sass';
@@ -41,7 +41,7 @@ function ChooseYourTour() {
 
             <div className="card-choosing-section">
                 {PopularExcursionsData.map((info, index) =>
-                        <CardCreating info={info} key={index} cardName={'tour'}/>)}
+                        <CardTemplate info={info} key={index} cardName={'tour'}/>)}
             </div>
         </section>
     )

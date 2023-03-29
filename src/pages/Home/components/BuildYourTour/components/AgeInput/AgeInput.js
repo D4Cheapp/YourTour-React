@@ -1,11 +1,11 @@
 import React, {useEffect, useRef} from 'react';
-import './AgeAndLicenceInput.sass'
+import './AgeInput.sass'
 
-function AgeAndLicenceInput({setButtons}) {
-    const buttons = useRef()
+function AgeInput({setAgeValidation}) {
+    const confirmAgeButton = useRef()
 
     useEffect(() => {
-        setButtons(buttons)
+        setAgeValidation(confirmAgeButton)
     },[])
 
     return (
@@ -17,8 +17,8 @@ function AgeAndLicenceInput({setButtons}) {
 
                 <div className="age-radio-buttons-container">
                     <label className="age-radio-button">
-                        <input type="radio" name='age' className="age-radio-button__input"
-                               ref={buttons} required/>
+                        <input type="radio" name='age' value='adult' className="age-radio-button__input"
+                               ref={confirmAgeButton} required/>
 
                         <div className="age-radio-button__custom-checkbox"/>
 
@@ -28,7 +28,7 @@ function AgeAndLicenceInput({setButtons}) {
                     </label>
 
                     <label className="age-radio-button">
-                        <input type="radio" name='age' className="age-radio-button__input"/>
+                        <input type="radio" name='age' value='young' className="age-radio-button__input"/>
 
                         <div className="age-radio-button__custom-checkbox"/>
 
@@ -38,23 +38,9 @@ function AgeAndLicenceInput({setButtons}) {
                     </label>
                 </div>
             </div>
-
-            <label className="license-agreement">
-                <input type="checkbox" className="license-agreement__checkbox"/>
-
-                <div className="license-agreement__custom-checkbox"/>
-
-                <p className="license-agreement__contract">
-                    Нажимая кнопку, я принимаю условия 
-
-                    <a href="src/components/home/sections/buildYourTourComponents" className="license-agreement__link">
-                        Лицензионного договора
-                    </a>
-                </p>
-            </label>
         </>
 
     );
 }
 
-export default AgeAndLicenceInput;
+export default AgeInput;

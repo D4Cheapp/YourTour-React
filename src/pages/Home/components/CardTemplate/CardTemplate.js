@@ -1,10 +1,10 @@
 import {Link, useNavigate} from "react-router-dom";
 import CardArrow from "../../../../images/svg/CardsArrow.svg";
 import React from "react";
-import './CardCreation.sass';
+import './CardTemplate.sass';
 
 
-function CardCreating({info, cardName}) {
+function CardTemplate({info, cardName}) {
     const navigator = useNavigate()
 
     return(
@@ -44,4 +44,4 @@ function CardCreating({info, cardName}) {
     )
 }
 
-export default CardCreating
+export default CardTemplate
