@@ -5,7 +5,7 @@ import './CTA.sass';
 function CTA() {
     return (
         <section className='cta-section'>
-            <img src={CTAPicture} alt="" className="cta-section__image"/>
+            <img src={CTAPicture} alt="Glade" className="cta-section__image"/>
 
             <div className="cta-description-container">
                 <h2 className="cta-description-container__title">

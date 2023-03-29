@@ -20,7 +20,7 @@ function CardTemplate({info, cardName}) {
             </div>
 
             <img className={`${cardName}-card__background-image base-card__background-image`}
-                 src={info.image} loading='lazy' alt=""/>
+                 src={info.image} loading='lazy' alt={info.name}/>
 
             <div className="base-card__blackout"/>
 
