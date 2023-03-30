@@ -50,6 +50,21 @@ nav.scroll
     color: $black
     +underline($black, 1px)
 
+
+nav.scrollError
+  position: absolute
+  border-bottom: 1px black solid
+
+  background: rgba(243, 239, 232, 0.6)
+
+  img.logo
+    filter: invert(1)
+
+  a.telephone, & > div.links > a.link
+    color: $black
+    +underline($black, 1px)
+
+
 @media screen and (max-width: 1700px)
   nav
     width: 100%

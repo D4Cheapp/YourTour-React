@@ -34,7 +34,7 @@ function Navigation() {
     }
 
     return (
-        <nav ref={navBar} className={ isErrorPage ? 'scrollError' : ''}>
+        <nav ref={navBar} className={isErrorPage ? style.scrollError : ''}>
             <img className={style.logo} src={logo} alt="logo" onClick={() => navigate('/')}/>
 
             <div className={style.links}>
