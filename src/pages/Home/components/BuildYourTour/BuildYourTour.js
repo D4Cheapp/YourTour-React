@@ -10,7 +10,7 @@ function BuildYourTour() {
     const confirmAgeRef = useRef()
     const licenseCheckboxRef = useRef()
 
-    function redirectAfterSubmit(event) {
+    function handleSubmit(event) {
         event.preventDefault()
 
         if (confirmAgeRef?.current?.checked && licenseCheckboxRef?.current?.checked) {
@@ -29,7 +29,7 @@ function BuildYourTour() {
             <SectionTitle title='Собери свой тур' isWrap={true} sectionStyle={style}/>
 
             <form className={style.form}
-                  onSubmit={(event) => redirectAfterSubmit(event)}>
+                  onSubmit={handleSubmit}>
 
                 <FormInputFields/>
 
