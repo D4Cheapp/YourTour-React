@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import logo from '../../images/png/header/HeaderLogo.png'
 import {NavLink, useNavigate} from "react-router-dom";
-import './Navigation.sass'
+import style from './Navigation.modules.sass'
 
 function Navigation() {
     let scrollPosition = 0
@@ -18,10 +18,10 @@ function Navigation() {
         scrollPosition = window.scrollY
 
         if (scrollPosition >= 450){
-            navBar.current.classList.add('scroll-navigation')
+            navBar.current.classList.add(style.scroll)
         }
         else{
-            navBar.current.classList.remove('scroll-navigation')
+            navBar.current.classList.remove(style.scroll)
         }
     }
 
@@ -34,25 +34,25 @@ function Navigation() {
     }
 
     return (
-        <nav ref={navBar} className={ isErrorPage ? 'scroll-navigation__error' : ''}>
-            <img className="navigation__logo" src={logo} alt="logo" onClick={() => navigate('/')}/>
+        <nav ref={navBar} className={ isErrorPage ? 'scrollError' : ''}>
+            <img className={style.logo} src={logo} alt="logo" onClick={() => navigate('/')}/>
 
-            <div className="navigation-links">
-                <NavLink to="/tours" className="navigation-links__link">
+            <div className={style.links}>
+                <NavLink to="/tours" className={style.link}>
                     Туры
                 </NavLink>
-                <NavLink to="/build-tour" className="navigation-links__link">
+                <NavLink to="/build-tour" className={style.link}>
                     Создать тур
                 </NavLink>
-                <NavLink to="/feedback" className="navigation-links__link">
+                <NavLink to="/feedback" className={style.link}>
                     Отзывы
                 </NavLink>
-                <NavLink to="/history" className="navigation-links__link">
+                <NavLink to="/history" className={style.link}>
                     Истории
                 </NavLink>
             </div>
 
-            <a className="navigation__telephone" href="tel:+79999999999">
+            <a className={style.telephone} href="tel:+79999999999">
                 +7 999 999 99 99
             </a>
         </nav>

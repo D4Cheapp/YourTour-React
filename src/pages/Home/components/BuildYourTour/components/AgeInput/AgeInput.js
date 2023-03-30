@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import './AgeInput.sass'
+import style from './AgeInput.module.sass'
 
 function AgeInput({setAgeValidation}) {
     const confirmAgeButton = useRef()
@@ -10,29 +10,29 @@ function AgeInput({setAgeValidation}) {
 
     return (
         <>
-            <div className="build-tour-age-check">
-                <h5 className="build-tour-age-check__title form-title">
+            <div className={style.ageCheck}>
+                <h5 className="form-title">
                     Вам есть 18 лет?
                 </h5>
 
-                <div className="age-radio-buttons-container">
-                    <label className="age-radio-button">
-                        <input type="radio" name='age' value='adult' className="age-radio-button__input"
+                <div className={style.buttonsBox}>
+                    <label className={style.button}>
+                        <input type="radio" name='age' value='adult' className={style.input}
                                ref={confirmAgeButton} required/>
 
-                        <div className="age-radio-button__custom-checkbox"/>
+                        <div className={style.customCheckbox}/>
 
-                        <h4 className="age-radio-button__label">
+                        <h4 className={style.label}>
                             Да
                         </h4>
                     </label>
 
-                    <label className="age-radio-button">
-                        <input type="radio" name='age' value='young' className="age-radio-button__input" required/>
+                    <label className={style.button}>
+                        <input type="radio" name='age' value='young' className={style.input} required/>
 
-                        <div className="age-radio-button__custom-checkbox"/>
+                        <div className={style.customCheckbox}/>
 
-                        <h4 className="age-radio-button__label">
+                        <h4 className={style.label}>
                             Нет
                         </h4>
                     </label>

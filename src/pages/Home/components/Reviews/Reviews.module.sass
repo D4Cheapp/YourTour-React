@@ -1,15 +1,15 @@
-section.users-feedback
+section.feedback
   +sectionInit
 
 
-div.feedback-container
+div.container
   width: 100%
   display: inline-flex
   justify-content: center
   gap: 30px
 
 
-div.user-response
+div.response
   display: inline-flex
   flex-direction: column
   justify-content: space-between
@@ -23,7 +23,7 @@ div.user-response
 
   background: $beige200
 
-  p.user-response__text
+  p.text
     white-space: pre-wrap
     margin: 0
     font-weight: 700
@@ -31,30 +31,30 @@ div.user-response
     line-height: 28px
 
 
-div.user-info-container
+div.userInfo
   display: inline-flex
   justify-content: space-between
   align-items: flex-end
   height: 145px
 
-  img.user-info-container__profile-picture
+  img.profilePicture
     width: 75px
     height: 75px
     border-radius: 50%
 
 
-div.user-description
+div.description
   display: inline-flex
   flex-direction: column
   justify-content: flex-end
 
-  h2.user-info-container__name
+  h2.name
     margin: 0 0 8px
     font-size: 35px
     font-weight: 500
     line-height: 122%
 
-  p.user-description__tour-name
+  p.tourName
     margin: 0
 
     line-height: 142%
@@ -65,38 +65,38 @@ div.user-description
 
 
 @media screen and (max-width: 1300px)
-  div.feedback-container
+  div.container
     gap: 18px
     width: 90%
 
-  div.user-response
+  div.response
     width: auto
     height: auto
 
 
 @media screen and (max-width: 1024px)
-  div.user-response
+  div.response
     width: 450px
     height: 841px
 
 
 @media screen and (max-width: 1024px)
-  div.user-response
+  div.response
     height: auto
 
 
 @media screen and (max-width: 700px)
-  div.feedback-container
+  div.container
     align-items: center
     flex-direction: column
     margin-top: 10px
 
-  div.user-response
+  div.response
     padding: 20px
     border-radius: 20px
     width: 318px
 
-    p.user-response__text
+    p.text
       width: 99%
       line-height: 145%
       font-size: 16px
@@ -107,14 +107,14 @@ div.user-description
     &__1
       height: 592px
 
-  div.user-info-container
+  div.userInfo
     height: 115px
 
-  div.user-description
-    h2.user-info-container__name
+  div.description
+    h2.name
       letter-spacing: 0.04em
       font-weight: 700
       font-size: 23px
 
-    p.user-description__tour-name
+    p.tourName
       font-size: 16px

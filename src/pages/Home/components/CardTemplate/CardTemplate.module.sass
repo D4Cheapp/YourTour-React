@@ -1,4 +1,4 @@
-div.base-card
+div.card
   position: relative
 
   box-sizing: border-box
@@ -7,13 +7,13 @@ div.base-card
   overflow: hidden
 
   &:hover
-    img.base-card__background-image
+    img.backgroundImage
       scale: 1.2
 
-    button.base-card__more-button
+    button.moreButton
       background: $green400
 
-  img.base-card__background-image
+  img.backgroundImage
     position: absolute
     z-index: -2
     top: 0
@@ -25,7 +25,7 @@ div.base-card
 
     transition: .3s
 
-  div.base-card__blackout
+  div.blackout
     position: absolute
     z-index: -1
     top: 0
@@ -35,7 +35,7 @@ div.base-card
     width: 100%
     height: 100%
 
-  button.base-card__more-button
+  button.moreButton
     position: absolute
 
     outline: none
@@ -64,21 +64,21 @@ div.base-card
       background: $orange200
 
 
-div.base-card-social-media
+div.socialMedia
   display: inline-flex
   gap: 35px
 
-  a.base-card-social-media__link
+  a.socialMediaLink
     text-decoration: none
     font-size: 20px
     color: $white
     +underline($white, 1px, $orange200)
 
 
-div.base-card-info
+div.info
   color: $white
 
-  h1.base-card-info__title
+  h1.title
     margin-top: 0
     margin-bottom: 16px
 
@@ -86,15 +86,15 @@ div.base-card-info
     font-size: 35px
     line-height: 122%
 
-  p.base-card-info__description
+  p.description
     margin: 0
 
 
 @media screen and (max-width: 700px)
-  div.base-card
+  div.card
     border-radius: 20px
 
-    button.base-card__more-button
+    button.moreButton
       padding-block: 3px
       padding-inline: 10px
       border-radius: 20px
@@ -102,12 +102,12 @@ div.base-card-info
       font-size: 16px
       line-height: 22.72px
 
-  div.base-card-social-media
+  div.socialMedia
     display: none
 
-  div.base-card-info
+  div.info
 
-    h1.base-card-info__title
+    h1.title
       font-size: 23px
       letter-spacing: 0.04em
       line-height: 120%

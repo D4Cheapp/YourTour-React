@@ -17,6 +17,7 @@ specifiers:
   gh-pages: ^5.0.0
   html-webpack-plugin: ^5.5.0
   image-minimizer-webpack-plugin: ^3.8.1
+  mini-css-extract-plugin: ^2.7.5
   normalize.css: ^8.0.1
   postcss: ^8.4.21
   postcss-loader: ^7.0.2
@@ -55,6 +56,7 @@ devDependencies:
   gh-pages: 5.0.0
   html-webpack-plugin: 5.5.0_webpack@5.75.0
   image-minimizer-webpack-plugin: 3.8.1_webpack@5.75.0
+  mini-css-extract-plugin: 2.7.5_webpack@5.75.0
   postcss: 8.4.21
   postcss-loader: 7.0.2_6jdsrmfenkuhhw3gx4zvjlznce
   react: 18.2.0
@@ -4106,6 +4108,16 @@ packages:
     resolution: {integrity: sha512-9Wy1B3m3f66bPPmU5hdA4DR4PB2OfDU/+GS3yAB7IQozE3tqXaVv2zOjgla7MEGSRv95+ILmOuvhLkOK6wJtCQ==}
     dependencies:
       dom-walk: 0.1.2
+    dev: true
+
+  /mini-css-extract-plugin/2.7.5_webpack@5.75.0:
+    resolution: {integrity: sha512-9HaR++0mlgom81s95vvNjxkg52n2b5s//3ZTI1EtzFb98awsLSivs2LMsVqnQ3ay0PVhqWcGNyDaTE961FOcjQ==}
+    engines: {node: '>= 12.13.0'}
+    peerDependencies:
+      webpack: ^5.0.0
+    dependencies:
+      schema-utils: 4.0.0
+      webpack: 5.75.0_webpack-cli@5.0.1
     dev: true
 
   /minimalistic-assert/1.0.1:

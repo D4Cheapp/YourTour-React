@@ -1,9 +1,9 @@
-label.licence-agreement
+label.licence
   display: inline-flex
   align-items: center
   gap: 19px
 
-  div.licence-agreement__custom-checkbox
+  div.customCheckbox
     +customInput
     border-radius: 5px
 
@@ -17,42 +17,42 @@ label.licence-agreement
       border-right: 2px $black solid
       border-bottom: 2px $black solid
 
-  input.licence-agreement__checkbox
+  input.checkbox
     display: none
 
-    &:checked + div.licence-agreement__custom-checkbox::after
+    &:checked + div.customCheckbox::after
       opacity: 1
 
-  p.licence-agreement__contract, a.licence-agreement__link
+  p.contract, a.link
     margin: 0
     font-size: 17px
     color: $gray300
     letter-spacing: -0.01em
 
-  a.licence-agreement__link
+  a.link
     text-decoration: none
     color: $black
     +underline($black, 1px, $green400)
 
 
 @media screen and (max-width: 1300px)
-  label.licence-agreement
+  label.licence
     display: inline-flex
     align-items: center
     gap: 11px
 
 
 @media screen and (max-width: 700px)
-  label.licence-agreement
+  label.licence
     align-items: flex-start
 
-    p.licence-agreement__contract, a.licence-agreement__link
+    p.contract, a.link
       font-size: 16px
       line-height: 23px
 
-    p.licence-agreement__contract
+    p.contract
       width: 248px
 
-    div.licence-agreement__custom-checkbox::after
+    div.customCheckbox::after
       width: 4px
       height: 8px

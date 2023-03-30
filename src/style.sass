@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap')
+@import normalize.css
 
 $black: #1B1F2B
 $white: #FFFF
@@ -26,6 +27,21 @@ body
   max-width: 100%
   overflow-x: hidden
   background: $mercury
+
+h5.form-title
+  margin-top: 0
+  margin-bottom: 8px
+  line-height: 28px
+  font-weight: 400
+  font-size: 20px
+
+@media screen and (max-width: 700px)
+  h5.form-title
+    margin-top: 0
+    margin-bottom: 8px
+    font-weight: 400
+    font-size: 16px
+    line-height: 23px
 
 =underline ($color, $height, $activeColor:$color)
   border-bottom: $height transparent solid

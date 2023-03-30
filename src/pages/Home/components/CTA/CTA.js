@@ -1,20 +1,20 @@
 import React from 'react';
 import CTAPicture from '../../../../images/png/cta/ctaPicture.png';
-import './CTA.sass';
+import style from './CTA.module.sass';
 
 function CTA() {
     return (
-        <section className='cta-section'>
-            <img src={CTAPicture} alt="Glade" className="cta-section__image"/>
+        <section className={style.cta}>
+            <img src={CTAPicture} alt="Glade" className={style.image}/>
 
-            <div className="cta-description-container">
-                <h2 className="cta-description-container__title">
+            <div className={style.description}>
+                <h2 className={style.title}>
                     Пора в путешествие вместе с нами!
                 </h2>
 
-                <p className="cta-description-container__email-info">
+                <p className={style.emailInfo}>
                     Напиши на почту и узнай подробности на 
-                    <a className='cta-description-container__email-link' type='email'
+                    <a className={style.emailLink} type='email'
                        href='mailto:yourtour@gmail.com'>
                         yourtour@gmail.com
                     </a>

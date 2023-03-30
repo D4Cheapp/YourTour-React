@@ -1,6 +1,6 @@
 import React from "react";
 import {Outlet} from "react-router-dom";
-import './pages/Home/components/Header/Header.sass';
+import './pages/Home/components/Header/Header.module.sass';
 import {Navigation} from "./components/Navigation";
 import {Footer} from "./components/Footer";
 

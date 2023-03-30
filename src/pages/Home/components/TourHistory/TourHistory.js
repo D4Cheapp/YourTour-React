@@ -2,16 +2,16 @@ import React from 'react';
 import {HistoryData} from "../../../../data/HistoryData";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import CardTemplate from "../CardTemplate/CardTemplate";
-import './TourHistory.sass';
+import style from './TourHistory.module.sass';
 
 function TourHistory() {
     return (
-        <section className="tour-history">
-            <SectionTitle title='Истории путешествий' sectionName='tour-history'/>
+        <section className={style.tourHistory}>
+            <SectionTitle title='Истории путешествий' sectionStyle={style}/>
 
-            <div className="history-card-container">
+            <div className={style.container}>
                 {HistoryData.map((history, index) =>
-                    <CardTemplate info={history} key={index} cardName={'history'}/>)}
+                    <CardTemplate info={history} key={index} cardStyles={style}/>)}
             </div>
 
         </section>

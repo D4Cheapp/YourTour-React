@@ -4,7 +4,7 @@ import Instagram from '../../images/svg/Instagram.svg'
 import Facebook from '../../images/svg/Facebook.svg'
 import VKontakte from '../../images/svg/VKontakte.svg'
 
-import './Footer.sass';
+import styles from './Footer.module.sass';
 import {useNavigate} from "react-router-dom";
 
 function Footer() {
@@ -22,11 +22,11 @@ function Footer() {
 
     return (
         <footer className={isErrorPage ? 'error-footer' : ''}>
-            <p className="footer-description">
+            <p className={styles.description}>
                 Наши социальные сети
             </p>
 
-            <div className="footer-social-media">
+            <div className={styles.socialMedia}>
                 <SocialMediaLink image={Instagram} name='instagram' link='https://instagram.com/'/>
 
                 <SocialMediaLink image={Facebook} name='facebook' link='https://facebook.com/'/>
@@ -37,14 +37,15 @@ function Footer() {
     );
 }
 
+
 function SocialMediaLink({image, name, link}) {
     return (
-        <div className={`social-media-container social-media-container__${name}`}>
-            <div className="icon-container">
-                <img src={image} alt={name} className="icon-container__icon"/>
+        <div className={`${styles.socialMediaContainer} ${styles.socialMediaContainer + name}`}>
+            <div className={styles.iconBox}>
+                <img src={image} alt={name} className={styles.icon}/>
             </div>
 
-            <a target='_blank' href={link} className="social-media-container__link">
+            <a target='_blank' href={link} className={styles.link}>
                 {name}
             </a>
         </div>
