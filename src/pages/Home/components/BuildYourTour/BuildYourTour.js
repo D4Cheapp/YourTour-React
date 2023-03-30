@@ -1,22 +1,26 @@
 import {AgeInput, FormButtons, FormInputFields, LicenceInput} from "./components";
 import {SectionTitle} from "../SectionTitle";
 import {useNavigate} from "react-router-dom";
-import React, {useState} from 'react';
+import React, {useRef} from 'react';
 import style from './BuildYourTour.module.sass';
 
 function BuildYourTour() {
     const navigator = useNavigate()
 
-    const [confirmAgeButton, setConfirmAgeButton] = useState()
+    const confirmAgeRef = useRef()
+    const licenseCheckboxRef = useRef()
 
     function redirectAfterSubmit(event) {
         event.preventDefault()
 
-        if (confirmAgeButton?.current.checked) {
+        if (confirmAgeRef?.current?.checked && licenseCheckboxRef?.current?.checked) {
             navigator('/build-tour')
         }
-        else {
+        else if (!confirmAgeRef?.current?.checked) {
             alert("Для заполнения формы вам должно быть больше 18 лет");
+        }
+        else {
+            alert("Для заполнения формы вы должны принять лицензионное соглашение");
         }
     }
 
@@ -29,9 +33,9 @@ function BuildYourTour() {
 
                 <FormInputFields/>
 
-                <AgeInput setAgeValidation={setConfirmAgeButton}/>
+                <AgeInput confirmAgeRef={confirmAgeRef}/>
 
-                <LicenceInput/>
+                <LicenceInput licenseCheckboxRef={licenseCheckboxRef}/>
 
                 <FormButtons/>
             </form>
