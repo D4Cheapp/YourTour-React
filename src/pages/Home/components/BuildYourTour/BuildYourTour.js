@@ -2,7 +2,7 @@ import {AgeInput, FormButtons, FormInputFields, LicenceInput} from "./components
 import {SectionTitle} from "../SectionTitle";
 import {useNavigate} from "react-router-dom";
 import React, {useState} from 'react';
-import './BuildYourTour.sass';
+import style from './BuildYourTour.module.sass';
 
 function BuildYourTour() {
     const navigator = useNavigate()
@@ -21,10 +21,10 @@ function BuildYourTour() {
     }
 
     return (
-        <section className='build-your-tour'>
-            <SectionTitle title='Собери свой тур' isWrap={true} sectionName='build-your-tour'/>
+        <section className={style.tourBuild}>
+            <SectionTitle title='Собери свой тур' isWrap={true} sectionStyle={style}/>
 
-            <form className='tour-building-form'
+            <form className={style.form}
                   onSubmit={(event) => redirectAfterSubmit(event)}>
 
                 <FormInputFields/>

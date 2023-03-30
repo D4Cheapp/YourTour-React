@@ -1,13 +1,13 @@
 import React from 'react';
-import './SectionTitle.sass';
+import style from './SectionTitle.module.sass';
 
-function SectionTitle({title, isWrap, sectionName}) {
+function SectionTitle({title, isWrap, sectionStyle}) {
     return (
-        <div className={`section-title section-title-${sectionName}`}>
-            <h1 className={`section-title__header section-title__header-${sectionName}`}>
+        <div className={`${style.title} ${sectionStyle.sectionTitle}`}>
+            <h1 className={`${style.header} ${sectionStyle.sectionHeader}`}>
                 {title}
             </h1>
-            <p className={`section-title__description section-title__description-${sectionName}`}>
+            <p className={`${style.description} ${sectionStyle.sectionDescription}`}>
                 Идейные соображения высшего порядка,{isWrap ? '\na ' : ' a\n'}
                 также рамки и место обучения кадров
             </p>

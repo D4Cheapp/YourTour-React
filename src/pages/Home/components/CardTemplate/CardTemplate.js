@@ -1,39 +1,38 @@
+import React from "react";
 import {Link, useNavigate} from "react-router-dom";
 import CardArrow from "../../../../images/svg/CardsArrow.svg";
-import React from "react";
-import './CardTemplate.sass';
+import style from './CardTemplate.module.sass';
 
-
-function CardTemplate({info, cardName}) {
+function CardTemplate({info, cardStyles}) {
     const navigator = useNavigate()
 
     return(
-        <div className={`${cardName}-card base-card`}>
-            <div className={`${cardName}-card-info base-card-info`}>
-                <h1 className={`${cardName}-card-info__title base-card-info__title`}>
+        <div className={`${cardStyles.card} ${style.card}`}>
+            <div className={`${cardStyles.info} ${style.info}`}>
+                <h1 className={`${cardStyles.title} ${style.title}`}>
                     {info.title}
                 </h1>
 
-                <p className={`${cardName}-card-info__description base-card-info__description`}>
+                <p className={`${cardStyles.description} ${style.description}`}>
                     {info?.price ? `от ${info.price.toLocaleString()} руб` : info.description}
                 </p>
             </div>
 
-            <img className={`${cardName}-card__background-image base-card__background-image`}
+            <img className={`${cardStyles.image} ${style.backgroundImage}`}
                  src={info.image} loading='lazy' alt={info.name}/>
 
-            <div className="base-card__blackout"/>
+            <div className={style.blackout}/>
 
-            <div className={`${cardName}-card-links-container base-card-links-container`}>
-                <button className={`${cardName}-card__more-button base-card__more-button`}
+            <div className={cardStyles.links}>
+                <button className={`${cardStyles.moreButton} ${style.moreButton}`}
                         onClick={() => navigator(`/tours`)}>
                     Подробнее <img src={CardArrow} alt='' loading='lazy'/>
                 </button>
 
                 {info?.socialMedia &&
-                    <div className={`base-card-social-media`}>
+                    <div className={style.socialMedia}>
                         {info.socialMedia.map(media =>
-                            <Link target='_blank' to={media.link} key={media.name} className={`base-card-social-media__link`}>
+                            <Link target='_blank' to={media.link} key={media.name} className={style.socialMediaLink}>
                                 {media.name}
                             </Link>)}
                     </div>

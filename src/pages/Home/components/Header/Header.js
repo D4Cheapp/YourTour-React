@@ -1,27 +1,27 @@
 import React from 'react';
 import HeaderBackground from '../../../../images/png/header/HeaderBackground.png';
 import {useNavigate} from "react-router-dom";
-import './Header.sass';
+import style from './Header.module.sass';
 
 function Header() {
     const navigation = useNavigate()
 
     return (
-        <header style={{backgroundImage: `url(${HeaderBackground})`}}>
-            <div className="header__blackout"/>
+        <header className={style.header} style={{backgroundImage: `url(${HeaderBackground})`}}>
+            <div className={style.blackout}/>
 
-            <h1 className='header__title'>
+            <h1 className={style.title}>
                 Идеальные <br/>
                 путешествия <br/>
                 существуют
             </h1>
 
-            <p className='header__description'>
+            <p className={style.description}>
                 Идейные соображения высшего порядка, а также рамки и место
                 обучения кадров
             </p>
 
-            <button className='header__find-tour' onClick={() => navigation('/tour')}>
+            <button className={style.findTour} onClick={() => navigation('/tour')}>
                 Найти тур
             </button>
         </header>

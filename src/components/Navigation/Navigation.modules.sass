@@ -12,41 +12,41 @@ nav
   padding-inline: 376px
   font-size: 20px
 
-  img.navigation__logo
+  img.logo
     height: 30px
     cursor: pointer
     object-fit: contain
 
-  a.navigation__telephone
+  a.telephone
     text-decoration: none
     color: $white
     +underline($white, 1px)
 
 
-div.navigation-links
+div.links
   display: inline-flex
   gap: 50px
 
-  a.navigation-links__link
+  a.link
     text-decoration: none
     color: $white
     +underline($white, 1px)
 
-  a.navigation-links__link.active
+  a.link.active
     border-bottom: 1px $white solid
 
 
-nav.scroll-navigation
+nav.scroll
   position: fixed
   top: 0
 
   background: rgba(243, 239, 232, 0.6)
   backdrop-filter: blur(27px)
 
-  img.navigation__logo
+  img.logo
     filter: invert(1)
 
-  a.navigation__telephone, & > div.navigation-links > a.navigation-links__link
+  a.telephone, & > div.links > a.link
     color: $black
     +underline($black, 1px)
 
@@ -63,20 +63,20 @@ nav.scroll-navigation
     justify-content: space-between
     padding-inline: 57px
 
-  div.navigation-links
+  div.links
     gap: 30px
 
 
 @media screen and (max-width: 900px)
-  div.navigation-links
+  div.links
     display: none
 
   nav
     width: calc(100% - 40px)
     padding-inline: 20px
 
-    img.navigation__logo
+    img.logo
       height: 22px
 
-    a.navigation__telephone
+    a.telephone
       font-size: 16px

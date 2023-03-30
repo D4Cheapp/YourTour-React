@@ -1,8 +1,8 @@
-section.tour-photos
+section.tourPhotos
   +sectionInit
 
 
-div.photos-section
+div.photosContainer
   margin-top: -3px
   display: inline-flex
   flex-direction: column
@@ -14,132 +14,137 @@ div.photos-section
   row-gap: 30px
 
 
-div.photos-row
+div.photosRow
   display: inline-flex
   justify-content: center
   height: 301px
   gap: 30px
 
-  img.photos-row__image
+  img.image
     height: 100%
     object-fit: cover
     border-radius: 50px
 
 
-div.second-row-photos
-  img.photos-row__image
+div.secondRow
+  width: 100%
+
+  img.image
     width: 347.32px
 
 
-div.first-row-photos, div.third-row-photos
-  img.photos-row__image
+div.firstRow, div.thirdRow
+  width: 100%
+
+  img.image
     width: 442.5px
 
 
 @media screen and (max-width: 1900px)
-  div.photos-row
+  div.photosRow
     gap: 20px
 
-  div.first-row-photos, div.third-row-photos
-    img.photos-row__image
+  div.firstRow, div.thirdRow
+    img.image
       height: 99%
       width: 23%
 
-  div.second-row-photos
-    img.photos-row__image
+  div.secondRow
+    img.image
       height: 99%
       width: 18%
 
 
 @media screen and (max-width: 1200px)
-  div.photos-row
+  div.photosRow
     gap: 20px
 
-  div.first-row-photos, div.third-row-photos
-    img.photos-row__image__desert
+  div.firstRow, div.thirdRow
+    img.image[alt='desert']
       display: none
 
-    img.photos-row__image__rowing
+    img.image[alt='rowing']
       display: none
 
-    img.photos-row__image
+    img.image
       height: 301px
       width: 314.67px
 
-  div.second-row-photos
-    img.photos-row__image__bridge
+  div.secondRow
+    img.image[alt='bridge']
       display: none
 
-    img.photos-row__image
+    img.image
       height: 301px
       width: 231px
 
+
 @media screen and (max-width: 1000px)
-  div.first-row-photos, div.third-row-photos
-    img.photos-row__image
+  div.firstRow, div.thirdRow
+    img.image
       height: 99%
       width: 30%
 
-  div.second-row-photos
-    img.photos-row__image
+  div.secondRow
+    img.image
       height: 99%
       width: 22%
 
-  div.photos-row
-    img.photos-row__image
+  div.photosRow
+    img.image
       border-radius: 20px
 
 
 @media screen and (max-width: 800px)
-  div.photos-section
+  div.photosContainer
     margin-top: 12px
 
-  div.first-row-photos, div.third-row-photos
+  div.firstRow, div.thirdRow
 
-    img.photos-row__image__hills
+    img.image[alt='hills']
       display: none
 
-    img.photos-row__image__busy-street
+    img.image[alt='busy-street']
       display: none
 
-    img.photos-row__image
+    img.image
       width: 40%
 
-  div.second-row-photos
-    img.photos-row__image__map
+  div.secondRow
+    img.image[alt='map']
       display: none
 
-    img.photos-row__image
+    img.image
       width: 25%
 
 @media screen and (max-width: 500px)
-  div.section-title
-    h1.section-title__header-tour-photos
+  div.title
+    h1.sectionTitle
       white-space: normal
 
-  div.photos-section
+  div.photosContainer
     row-gap: 18px
 
-  div.first-row-photos
+  div.firstRow
     height: 110px
     gap: 18px
 
-    img.photos-row__image
+    img.image
       height: 110px
       width: 150px
 
-  div.third-row-photos
+  div.thirdRow
     height: 110px
     gap: 10px
 
-    img.photos-row__image
+    img.image
       height: 110px
       width: 154px
 
-  div.second-row-photos
+  div.secondRow
     height: 110px
     gap: 10px
 
-    img.photos-row__image
+    img.image
       height: 110px
       width: 100px

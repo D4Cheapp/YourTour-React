@@ -1,4 +1,4 @@
-section.cta-section
+section.cta
   width: 100%
   margin-top: 135px
 
@@ -7,71 +7,71 @@ section.cta-section
   align-items: center
   gap: 30px
 
-  img.cta-section__image
+  img.image
     width: 370px
     height: 370px
     border-radius: 50px
     object-fit: cover
 
 
-div.cta-description-container
+div.description
   width: 371px
 
   display: inline-flex
   flex-direction: column
   gap: 20px
 
-  h2.cta-description-container__title
+  h2.title
     margin: 0
     font-weight: 500
     font-size: 35px
     line-height: 42.7px
 
-  p.cta-description-container__email-info
+  p.emailInfo
     margin: 0
     color: $gray300
     font-size: 20px
     line-height: 28px
 
-  a.cta-description-container__email-link
+  a.emailLink
     color: $black
     text-decoration: none
     +underline($black, 1px, $green400)
 
 
 @media screen and (max-width: 800px)
-  section.cta-section
+  section.cta
     flex-direction: column
 
-  div.cta-description-container
+  div.description
     text-align: center
 
 
 @media screen and (max-width: 600px)
-  section.cta-section
-    img.cta-section__image
+  section.cta
+    img.image
       width: 60%
       height: 60%
 
 
 @media screen and (max-width: 450px)
-  section.cta-section
+  section.cta
     margin-top: 75px
 
-    img.cta-section__image
+    img.image
       width: 130px
       height: 133px
       border-radius: 20px
 
-  div.cta-description-container
+  div.description
     width: 291px
 
-    h2.cta-description-container__title
+    h2.title
       font-weight: 700
       font-size: 23px
       line-height: 27.6px
       letter-spacing: 0.04em
 
-    p.cta-description-container__email-info
+    p.emailInfo
       font-size: 16px
       line-height: 142%

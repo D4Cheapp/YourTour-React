@@ -1,17 +1,17 @@
 import React from 'react';
-import './LicenseInput.sass';
+import styles from './LicenseInput.module.sass';
 
 function LicenseInput() {
     return (
-        <label className="licence-agreement">
-            <input type="checkbox" className="licence-agreement__checkbox" required/>
+        <label className={styles.licence}>
+            <input type="checkbox" className={styles.checkbox} required/>
 
-            <div className="licence-agreement__custom-checkbox"/>
+            <div className={styles.customCheckbox}/>
 
-            <p className="licence-agreement__contract">
+            <p className={styles.contract}>
                 Нажимая кнопку, я принимаю условия
 
-                <a href="src/components/home/sections/buildYourTourComponents" className="licence-agreement__link">
+                <a href="" className={styles.link}>
                     Лицензионного договора
                 </a>
             </p>

@@ -1,26 +1,26 @@
 import React from 'react';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import {TourGalleryData} from "../../../../data/TourGalleryData";
-import './TourPhotos.sass';
+import style from './TourPhotos.module.sass';
 
 function TourPhotos() {
     return (
-        <section className='tour-photos'>
-            <SectionTitle title={`Фотографии путешествий`} sectionName='tour-photos'/>
+        <section className={style.tourPhotos}>
+            <SectionTitle title={`Фотографии путешествий`} sectionStyle={style}/>
 
-            <div className="photos-section">
+            <div className={style.photosContainer}>
                 <PhotosRowTemplate rowInfo={{
-                    row: 'first-row',
+                    row: style.firstRow,
                     pictures: TourGalleryData.slice(0,4)
                 }}/>
 
                 <PhotosRowTemplate rowInfo={{
-                    row: 'second-row',
+                    row: style.secondRow,
                     pictures: TourGalleryData.slice(4,9)
                 }}/>
 
                 <PhotosRowTemplate rowInfo={{
-                    row: 'third-row',
+                    row: style.thirdRow,
                     pictures: TourGalleryData.slice(9,13)
                 }}/>
             </div>
@@ -30,10 +30,10 @@ function TourPhotos() {
 
 function PhotosRowTemplate({rowInfo}) {
     return(
-        <div className={`photos-row ${rowInfo.row}-photos`}>
+        <div className={`${style.photosRow} ${rowInfo.row}`}>
             {rowInfo.pictures.map(picture =>
                 <img src={picture.src} alt={picture.name} key={picture.name}
-                    className={`photos-row__image photos-row__image__${picture.name}`} />)}
+                    className={style.image} />)}
         </div>
     )
 }

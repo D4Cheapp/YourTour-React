@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import CardTemplate from "../CardTemplate/CardTemplate";
 import PopularExcursionsData from "../../../../data/PopularExcursionsData";
-import './ChooseYourTour.sass';
-import './ChooseYourTourCards.sass';
+import cardStyle from './ChooseYourTourCards.module.sass'
+import style from './ChooseYourTour.module.sass';
 
 function ChooseYourTour() {
     const [activeCategory, setActiveCategory] = useState('popular')
@@ -16,18 +16,18 @@ function ChooseYourTour() {
     ]
 
     function giveActiveButtonClass(category) {
-        const baseClass = 'tour-select__button'
-        return activeCategory === category ? baseClass + ' active-category' : baseClass
+        const baseClass = style.button
+        return activeCategory === category ? `${baseClass} ${style.activeCategory}`: baseClass
     }
 
     return (
-        <section className="choose-your-tour">
-            <div className="choose-section">
-                <h1 className="choose-section__title">
+        <section className={style.chooseYourTour}>
+            <div className={style.chooseSection}>
+                <h1 className={style.title}>
                     Выбери свой тур
                 </h1>
 
-                <div className="tour-select">
+                <div className={style.select}>
                     {excursionsTypes.map(type => {
                         return (
                             <button className={giveActiveButtonClass(type.category)} key={type.category}
@@ -39,9 +39,9 @@ function ChooseYourTour() {
                 </div>
             </div>
 
-            <div className="card-choosing-section">
+            <div className={style.cardSection}>
                 {PopularExcursionsData.map((info, index) =>
-                        <CardTemplate info={info} key={index} cardName={'tour'}/>)}
+                        <CardTemplate info={info} key={index} cardStyles={cardStyle}/>)}
             </div>
         </section>
     )
