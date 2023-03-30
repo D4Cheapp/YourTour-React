@@ -9,80 +9,10 @@ div.container
   gap: 30px
 
 
-div.response
-  display: inline-flex
-  flex-direction: column
-  justify-content: space-between
-
-  width: 570px
-  height: 673px
-
-  padding: 40px
-  border-radius: 50px
-  box-sizing: border-box
-
-  background: $beige200
-
-  p.text
-    white-space: pre-wrap
-    margin: 0
-    font-weight: 700
-    font-size: 23px
-    line-height: 28px
-
-
-div.userInfo
-  display: inline-flex
-  justify-content: space-between
-  align-items: flex-end
-  height: 145px
-
-  img.profilePicture
-    width: 75px
-    height: 75px
-    border-radius: 50%
-
-
-div.description
-  display: inline-flex
-  flex-direction: column
-  justify-content: flex-end
-
-  h2.name
-    margin: 0 0 8px
-    font-size: 35px
-    font-weight: 500
-    line-height: 122%
-
-  p.tourName
-    margin: 0
-
-    line-height: 142%
-    letter-spacing: -0.01em
-
-    font-size: 17px
-    color: $gray300
-
-
 @media screen and (max-width: 1300px)
   div.container
     gap: 18px
     width: 90%
-
-  div.response
-    width: auto
-    height: auto
-
-
-@media screen and (max-width: 1024px)
-  div.response
-    width: 450px
-    height: 841px
-
-
-@media screen and (max-width: 1024px)
-  div.response
-    height: auto
 
 
 @media screen and (max-width: 700px)
@@ -90,31 +20,3 @@ div.description
     align-items: center
     flex-direction: column
     margin-top: 10px
-
-  div.response
-    padding: 20px
-    border-radius: 20px
-    width: 318px
-
-    p.text
-      width: 99%
-      line-height: 145%
-      font-size: 16px
-
-    &__0
-      height: 408px
-
-    &__1
-      height: 592px
-
-  div.userInfo
-    height: 115px
-
-  div.description
-    h2.name
-      letter-spacing: 0.04em
-      font-weight: 700
-      font-size: 23px
-
-    p.tourName
-      font-size: 16px

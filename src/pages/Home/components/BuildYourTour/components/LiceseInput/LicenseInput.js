@@ -9,7 +9,7 @@ function LicenseInput() {
             <div className={styles.customCheckbox}/>
 
             <p className={styles.contract}>
-                Нажимая кнопку, я принимаю условия
+                Нажимая кнопку, я принимаю условия 
 
                 <a href="" className={styles.link}>
                     Лицензионного договора

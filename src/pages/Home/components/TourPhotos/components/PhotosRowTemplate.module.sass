@@ -1,0 +1,124 @@
+div.photosRow
+  display: inline-flex
+  justify-content: center
+  height: 301px
+  gap: 30px
+
+  img.image
+    height: 100%
+    object-fit: cover
+    border-radius: 50px
+
+
+div.secondRow
+  width: 100%
+
+  img.image
+    width: 347.32px
+
+
+div.firstRow, div.thirdRow
+  width: 100%
+
+  img.image
+    width: 442.5px
+
+
+@media screen and (max-width: 1900px)
+  div.photosRow
+    gap: 20px
+
+  div.firstRow, div.thirdRow
+    img.image
+      height: 99%
+      width: 23%
+
+  div.secondRow
+    img.image
+      height: 99%
+      width: 18%
+
+
+@media screen and (max-width: 1200px)
+  div.photosRow
+    gap: 20px
+
+  div.firstRow, div.thirdRow
+    img.image[alt='desert']
+      display: none
+
+    img.image[alt='rowing']
+      display: none
+
+    img.image
+      height: 301px
+      width: 314.67px
+
+  div.secondRow
+    img.image[alt='bridge']
+      display: none
+
+    img.image
+      height: 301px
+      width: 231px
+
+
+@media screen and (max-width: 1000px)
+  div.firstRow, div.thirdRow
+    img.image
+      height: 99%
+      width: 30%
+
+  div.secondRow
+    img.image
+      height: 99%
+      width: 22%
+
+  div.photosRow
+    img.image
+      border-radius: 20px
+
+
+@media screen and (max-width: 800px)
+  div.firstRow, div.thirdRow
+    img.image[alt='hills']
+      display: none
+
+    img.image[alt='busy-street']
+      display: none
+
+    img.image
+      width: 40%
+
+  div.secondRow
+    img.image[alt='map']
+      display: none
+
+    img.image
+      width: 25%
+
+
+@media screen and (max-width: 500px)
+  div.firstRow
+    height: 110px
+    gap: 18px
+
+    img.image
+      height: 110px
+      width: 150px
+
+    div.thirdRow
+      height: 110px
+      gap: 10px
+
+      img.image
+        height: 110px
+        width: 154px
+
+    div.secondRow
+      height: 110px
+      gap: 10px
+
+      img.image
+        height: 110px
+        width: 100px

@@ -4,29 +4,24 @@ div.container
   gap: 30px
   row-gap: 33px
 
-
 div.inputBox
   position: relative
   width: calc(50% - 15px)
 
-  input.input, select.citySelect
+  select.citySelect
     width: 100%
     height: 68px
 
     border: none
     outline: none
 
-    background: $beige200
+    background-color: $beige200
     border-radius: 10px
 
     box-sizing: border-box
     font-size: 20px
     padding: 20px
 
-    &::placeholder
-      color: $gray300
-
-  select.citySelect
     appearance: none
     cursor: pointer
 
@@ -38,6 +33,9 @@ div.inputBox
       color: $black
 
     &:required:invalid, option[value='']
+      color: $gray300
+
+    &::placeholder
       color: $gray300
 
 
@@ -80,18 +78,15 @@ div.commentBox
     flex-direction: column
     row-gap: 30px
 
+  div.commentBox
+    height: 163px
+
   div.inputBox
     width: 100%
 
-    input.input, select.citySelect
-      font-size: 16px
-      height: 43px
-      padding: 10px
-
     select.citySelect
+      font-size: 16px
+      padding: 10px
       height: 46px
       padding-block: 11.5px
       background-position-x: calc(100% - 14px)
-
-  div.commentBox
-    height: 163px
