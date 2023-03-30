@@ -1,13 +1,7 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import style from './AgeInput.module.sass'
 
-function AgeInput({setAgeValidation}) {
-    const confirmAgeButton = useRef()
-
-    useEffect(() => {
-        setAgeValidation(confirmAgeButton)
-    },[])
-
+function AgeInput({confirmAgeRef}) {
     return (
         <>
             <div className={style.ageCheck}>
@@ -17,8 +11,8 @@ function AgeInput({setAgeValidation}) {
 
                 <div className={style.buttonsBox}>
                     <label className={style.button}>
-                        <input type="radio" name='age' value='adult' className={style.input}
-                               ref={confirmAgeButton} required/>
+                        <input type="radio" name='age' value='adult'
+                               className={style.input} ref={confirmAgeRef}/>
 
                         <div className={style.customCheckbox}/>
 
@@ -28,7 +22,7 @@ function AgeInput({setAgeValidation}) {
                     </label>
 
                     <label className={style.button}>
-                        <input type="radio" name='age' value='young' className={style.input} required/>
+                        <input type="radio" name='age' value='young' className={style.input}/>
 
                         <div className={style.customCheckbox}/>
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './LicenseInput.module.sass';
 
-function LicenseInput() {
+function LicenseInput({licenseCheckboxRef}) {
     return (
         <label className={styles.licence}>
-            <input type="checkbox" className={styles.checkbox} required/>
+            <input type="checkbox" name='license'
+                   className={styles.checkbox} ref={licenseCheckboxRef}/>
 
             <div className={styles.customCheckbox}/>
 
