@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import InputMask from 'react-input-mask'
+import React from 'react';
 import Dropdown from '../../../../../../images/svg/Dropdown.svg';
 import styles from './FormInputFields.module.sass';
+import {InputTemplate} from "./component";
 
 function FormInputFields() {
     return (
@@ -60,26 +60,6 @@ function FormInputFields() {
             </div>
         </>
     );
-}
-
-function InputTemplate({title, name, inputParams}) {
-
-    const [inputValue, setInputValue] = useState()
-
-    function onInputChange(event) {
-        setInputValue(event.value)
-    }
-
-    return (
-        <div className={styles.inputBox}>
-            <h5 className='form-title'>
-                {title}
-            </h5>
-
-            <InputMask className={`${styles.input} ${styles.input + name}`} required
-                       {...inputParams} onChange={onInputChange} value={inputValue}/>
-        </div>
-    )
 }
 
 export default FormInputFields;

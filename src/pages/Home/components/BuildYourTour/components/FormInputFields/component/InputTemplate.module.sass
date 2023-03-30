@@ -1,0 +1,35 @@
+div.inputBox
+  position: relative
+  width: calc(50% - 15px)
+
+  input.input
+    width: 100%
+    height: 68px
+
+    border: none
+    outline: none
+
+    background: $beige200
+    border-radius: 10px
+
+    box-sizing: border-box
+    font-size: 20px
+    padding: 20px
+
+    &::placeholder
+      color: $gray300
+
+
+@media screen and (max-width: 1300px)
+  div.inputBox
+    width: calc(50% - 10px)
+
+
+@media screen and (max-width: 700px)
+  div.inputBox
+    width: 100%
+
+    input.input
+      font-size: 16px
+      height: 43px
+      padding: 10px

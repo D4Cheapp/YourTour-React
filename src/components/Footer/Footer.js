@@ -6,6 +6,7 @@ import VKontakte from '../../images/svg/VKontakte.svg'
 
 import styles from './Footer.module.sass';
 import {useNavigate} from "react-router-dom";
+import {SocialMediaLink} from "./component";
 
 function Footer() {
     const navigate = useNavigate()
@@ -35,21 +36,6 @@ function Footer() {
             </div>
         </footer>
     );
-}
-
-
-function SocialMediaLink({image, name, link}) {
-    return (
-        <div className={`${styles.socialMediaContainer} ${styles.socialMediaContainer + name}`}>
-            <div className={styles.iconBox}>
-                <img src={image} alt={name} className={styles.icon}/>
-            </div>
-
-            <a target='_blank' href={link} className={styles.link}>
-                {name}
-            </a>
-        </div>
-    )
 }
 
 export default Footer;
