@@ -4,9 +4,9 @@ import Instagram from '../../images/svg/Instagram.svg'
 import Facebook from '../../images/svg/Facebook.svg'
 import VKontakte from '../../images/svg/VKontakte.svg'
 
-import styles from './Footer.module.sass';
 import {useNavigate} from "react-router-dom";
 import {SocialMediaLink} from "./component";
+import styles from './Footer.module.sass';
 
 function Footer() {
     const navigate = useNavigate()
@@ -22,7 +22,7 @@ function Footer() {
     }
 
     return (
-        <footer className={isErrorPage ? 'error-footer' : ''}>
+        <footer className={isErrorPage ? styles.errorFooter : ''}>
             <p className={styles.description}>
                 Наши социальные сети
             </p>
