@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import {UsersFeedbackData} from "../../../../data/UsersFeedbackData";
-import {ReviewTemplate} from "./components";
+import {ReviewTemplate} from "./ReviewTemplate";
 import style from './Reviews.module.sass'
 
 function Reviews() {

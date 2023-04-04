@@ -1,7 +1,7 @@
 import React from 'react';
 import Dropdown from '../../../../../../images/svg/Dropdown.svg';
 import styles from './FormInputFields.module.sass';
-import {InputTemplate} from "./component";
+import {InputTemplate} from "./InputTemplate";
 
 function FormInputFields() {
     return (

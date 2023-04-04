@@ -5,7 +5,7 @@ import Facebook from '../../images/svg/Facebook.svg'
 import VKontakte from '../../images/svg/VKontakte.svg'
 
 import {useNavigate} from "react-router-dom";
-import {SocialMediaLink} from "./component";
+import {SocialMediaLink} from "./SocialMediaLink";
 import styles from './Footer.module.sass';
 
 function Footer() {

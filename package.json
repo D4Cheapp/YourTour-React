@@ -7,8 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "prod": "webpack --mode=production --define-process-env-node-env=production",
-    "deploy": "gh-pages -d docs",
-    "predeploy": "webpack --mode=production --define-process-env-node-env=production"
+    "deploy": "gh-pages -d docs"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -27,7 +26,6 @@
     "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "image-minimizer-webpack-plugin": "^3.8.1",
-    "mini-css-extract-plugin": "^2.7.5",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
     "react": "^18.2.0",

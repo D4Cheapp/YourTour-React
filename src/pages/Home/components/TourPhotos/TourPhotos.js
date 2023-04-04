@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from "../SectionTitle/SectionTitle";
 import {TourGalleryData} from "../../../../data/TourGalleryData";
 import style from './TourPhotos.module.sass';
-import {PhotosRowTemplate} from "./components";
+import {PhotosRowTemplate} from "./PhotosRowTemplate";
 
 function TourPhotos() {
     return (
