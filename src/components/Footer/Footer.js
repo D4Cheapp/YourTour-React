@@ -6,6 +6,7 @@ import VKontakte from '../../images/svg/VKontakte.svg'
 
 import {useNavigate} from "react-router-dom";
 import {SocialMediaLink} from "./SocialMediaLink";
+import checkIsErrorPage from "../../utils/checkIsErrorPage";
 import styles from './Footer.module.sass';
 
 function Footer() {
@@ -17,9 +18,6 @@ function Footer() {
         setIsErrorPage(checkIsErrorPage())
     }, [navigate])
 
-    function checkIsErrorPage() {
-        return !!window.location.href.split('/').at(-1)
-    }
 
     return (
         <footer className={isErrorPage ? styles.errorFooter : ''}>

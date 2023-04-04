@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
+import checkIsErrorPage from "../../utils/checkIsErrorPage";
 import logo from '../../images/png/header/HeaderLogo.png'
 import {NavLink, useNavigate} from "react-router-dom";
 import style from './Navigation.modules.sass'
@@ -28,10 +29,6 @@ function Navigation() {
     useEffect(() => {
         setIsErrorPage(checkIsErrorPage())
     }, [navigate])
-
-    function checkIsErrorPage() {
-        return !!window.location.href.split('/').at(-1)
-    }
 
     return (
         <nav ref={navBar} className={isErrorPage ? style.scrollError : ''}>
