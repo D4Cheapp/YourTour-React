@@ -7,7 +7,7 @@ function InputTemplate({title, name, inputParams}) {
     const [inputValue, setInputValue] = useState()
 
     function onInputChange(event) {
-        setInputValue(event.value)
+        setInputValue(event.target.value)
     }
 
     return (
